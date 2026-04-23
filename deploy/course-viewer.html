@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your AI Plug - Courses</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="container">
+<div class="header">
+<h1>Your AI Plug - Courses</h1>
+<p>AI for Local Business - Professional Training</p>
+</div>
+<div class="nav" id="nav">
+<button class="nav-btn free active" onclick="showModule(0)">Free Guide</button>
+<button class="nav-btn" onclick="showModule(1)">Module 1</button>
+<button class="nav-btn" onclick="showModule(2)">Module 2</button>
+<button class="nav-btn" onclick="showModule(3)">Module 3</button>
+<button class="nav-btn" onclick="showModule(4)">Module 4</button>
+<button class="nav-btn" onclick="showModule(5)">Module 5</button>
+</div>
+<div class="module active" id="module-0">
+<div class="cta-box"><h3>Free Download</h3><p>AI Business Starter Kit - Everything you need to start using AI in your business today.</p></div>
+<h1>AI Business Starter Kit</h1>
+<p><strong>Your AI Plug</strong> — Built for local business owners who want to move fast without wasting money.</p>
+<hr>
+<h2>Part 1: The 10 Essential AI Tools</h2>
+<p>Every tool listed below has a free or low-cost tier. Start with the free tier, upgrade when you see results.</p>
+<h3>Communication & Content</h3>
+<div class="table-wrapper"><table><tr><th>#</th><th>Tool</th><th>What It Does</th><th>Best For</th><th>Cost</th></tr><tr><td>1</td><td><strong>ChatGPT</strong></td><td>General-purpose AI assistant — writing, brainstorming, analysis</td><td>Everything</td><td>Free / $20/mo Plus</td></tr><tr><td>2</td><td><strong>Claude</strong></td><td>Long-form writing, document analysis, complex reasoning</td><td>Reports, contracts, detailed responses</td><td>Free / $20/mo Pro</td></tr><tr><td>3</td><td><strong>Canva AI (Magic Studio)</strong></td><td>AI-powered graphic design — social posts, flyers, presentations</td><td>Marketing materials</td><td>Free / $13/mo Pro</td></tr></table></div>
+<h3>Automation & CRM</h3>
+<div class="table-wrapper"><table><tr><th>#</th><th>Tool</th><th>What It Does</th><th>Best For</th><th>Cost</th></tr><tr><td>4</td><td><strong>GoHighLevel</strong></td><td>All-in-one CRM, funnels, email, SMS, reputation management</td><td>Replacing 5+ tools</td><td>$97/mo</td></tr><tr><td>5</td><td><strong>Make (Integromat)</strong></td><td>Visual automation builder — connects your tools together</td><td>Custom workflows</td><td>Free / $10.59/mo</td></tr><tr><td>6</td><td><strong>Zapier</strong></td><td>Simple automation — "when X happens, do Y"</td><td>Quick automations</td><td>Free / $19.99/mo</td></tr></table></div>
+<h3>Media & Design</h3>
+<div class="table-wrapper"><table><tr><th>#</th><th>Tool</th><th>What It Does</th><th>Best For</th><th>Cost</th></tr><tr><td>7</td><td><strong>ElevenLabs</strong></td><td>AI voice cloning and text-to-speech</td><td>Voiceovers, phone greetings</td><td>Free / $5/mo</td></tr><tr><td>8</td><td><strong>Midjourney / DALL-E</strong></td><td>AI image generation</td><td>Custom images, social media</td><td>$10/mo / included in ChatGPT</td></tr></table></div>
+<h3>Research & Productivity</h3>
+<div class="table-wrapper"><table><tr><th>#</th><th>Tool</th><th>What It Does</th><th>Best For</th><th>Cost</th></tr><tr><td>9</td><td><strong>Perplexity AI</strong></td><td>AI-powered search engine with sources</td><td>Market research, competitor analysis</td><td>Free / $20/mo Pro</td></tr><tr><td>10</td><td><strong>Notion AI</strong></td><td>AI-powered notes, docs, project management</td><td>Documentation, SOPs, planning</td><td>$10/mo add-on</td></tr></table></div>
+<hr>
+<h2>Part 2: 5 Automations That Save 10+ Hours/Week</h2>
+<h3>Automation 1: Instant Lead Follow-Up</h3>
+<p><strong>Time saved: 2-3 hours/week</strong></p>
+<p>When a new lead fills out a form or calls, they get an immediate text + email within 60 seconds — even at 2 AM.</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Trigger: New form submission or missed call</li>
+<li>Action 1: Send personalized SMS "Hey {name}, thanks for reaching out! We got your message and will be in touch within the hour."</li>
+<li>Action 2: Send email with your info + booking link</li>
+<li>Action 3: Notify your team in Slack/Discord</li>
+</ul>
+<p><strong>Tools needed:</strong> GoHighLevel (or Zapier + your CRM)</p>
+<hr>
+<h3>Automation 2: Review Request Sequence</h3>
+<p><strong>Time saved: 1-2 hours/week</strong></p>
+<p>After completing a job or appointment, automatically request a Google review via SMS.</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Trigger: Job marked complete / appointment finished</li>
+<li>Wait: 2 hours</li>
+<li>Action: Send SMS "Hey {name}, thanks for choosing {business}! If you had a great experience, would you mind leaving us a quick Google review? {review_link}"</li>
+<li>Wait: 3 days</li>
+<li>Action: If no review, send follow-up</li>
+</ul>
+<p><strong>Tools needed:</strong> GoHighLevel or Make</p>
+<hr>
+<h3>Automation 3: Social Media Content Pipeline</h3>
+<p><strong>Time saved: 3-4 hours/week</strong></p>
+<p>Generate a week of social media posts in 30 minutes using AI, then schedule them.</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Step 1: Ask ChatGPT "Create 7 social media posts for a [your business type] in [your city]. Each post should have a hook, value, and call-to-action."</li>
+<li>Step 2: Copy the posts into Canva to create graphics</li>
+<li>Step 3: Schedule all 7 at once using GoHighLevel social planner or Buffer</li>
+</ul>
+<p><strong>Tools needed:</strong> ChatGPT + Canva + scheduler</p>
+<hr>
+<h3>Automation 4: Appointment Reminders</h3>
+<p><strong>Time saved: 1-2 hours/week</strong></p>
+<p>No-shows cost money. Automated reminders cut no-shows by 50%+.</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>24 hours before: SMS "Reminder: You have an appointment tomorrow at {time}. Reply C to confirm or R to reschedule."</li>
+<li>2 hours before: SMS "Your appointment is in 2 hours. See you at {address}!"</li>
+<li>If no confirmation: Auto-alert your team</li>
+</ul>
+<p><strong>Tools needed:</strong> GoHighLevel (built-in) or any CRM with SMS</p>
+<hr>
+<h3>Automation 5: Invoice & Payment Reminders</h3>
+<p><strong>Time saved: 1-2 hours/week</strong></p>
+<p>Stop chasing payments manually.</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>When invoice is 3 days overdue: Send friendly reminder email</li>
+<li>When 7 days overdue: Send SMS reminder</li>
+<li>When 14 days overdue: Send final notice + alert your team</li>
+<li>When paid: Send thank-you message</li>
+</ul>
+<p><strong>Tools needed:</strong> Make/Zapier + your invoicing tool (QuickBooks, Stripe, etc.)</p>
+<hr>
+<h2>Part 3: The $27/Month Tech Stack</h2>
+<p>The minimum viable stack for a local business to run like a tech company.</p>
+<div class="table-wrapper"><table><tr><th>Function</th><th>Free Option</th><th>Paid Option ($27 Total)</th></tr><tr><td>CRM + Email</td><td>HubSpot Free</td><td>GoHighLevel Starter ($27) — includes CRM, email, SMS, funnels</td></tr><tr><td>Design</td><td>Canva Free</td><td>Canva Pro ($13) — but free works fine to start</td></tr><tr><td>AI Writing</td><td>ChatGPT Free</td><td>ChatGPT Plus ($20) — only if you need advanced features</td></tr><tr><td>Automation</td><td>Zapier Free (100 tasks)</td><td>Make Free (1,000 ops)</td></tr><tr><td>Social Scheduling</td><td>Buffer Free (3 channels)</td><td>GoHighLevel (included)</td></tr><tr><td>Website/Funnels</td><td>Carrd ($19/yr)</td><td>GoHighLevel (included)</td></tr><tr><td>Reviews</td><td>Manual</td><td>GoHighLevel (included)</td></tr><tr><td><strong>TOTAL</strong></td><td><strong>$0</strong></td><td><strong>$27/mo</strong> (GoHighLevel does it all)</td></tr></table></div>
+<p><strong>Recommendation:</strong> Start with the free column. When you're ready to consolidate everything into one tool, GoHighLevel at $27/mo replaces 5+ separate subscriptions.</p>
+<hr>
+<h2>Part 4: 20 AI Prompts for Local Business</h2>
+<h3>Marketing Copy</h3>
+<ol>
+<li>"Write a Google Business description for a [business type] in [city] that focuses on [key differentiator]."</li>
+<li>"Create 5 Facebook ad headlines for a [business type] offering [service]. Target audience: [describe audience]."</li>
+<li>"Write a follow-up email to a lead who asked about [service] but hasn't booked yet. Keep it friendly, not pushy."</li>
+</ol>
+<h3>Customer Communication</h3>
+<ol>
+<li>"Write a professional response to this 2-star review: '[paste review]'. Acknowledge their concern and offer to make it right."</li>
+<li>"Draft a text message to remind a customer about their upcoming appointment tomorrow at [time]."</li>
+<li>"Write an email to past customers announcing our new [service/product]. Include a special offer for returning customers."</li>
+</ol>
+<h3>Social Media</h3>
+<ol>
+<li>"Create 7 Instagram post ideas for a [business type] for this week. Include a mix of tips, behind-the-scenes, and customer features."</li>
+<li>"Write a LinkedIn post about [industry trend] from the perspective of a local [business type] owner."</li>
+<li>"Generate 3 short-form video script ideas (30 seconds each) for a [business type] to post on TikTok/Reels."</li>
+</ol>
+<h3>Operations</h3>
+<ol>
+<li>"Create a standard operating procedure (SOP) for handling new customer inquiries at a [business type]. Include response templates."</li>
+<li>"Write a job posting for a [position] at a [business type]. Emphasize [key benefits of working here]."</li>
+<li>"Create a customer satisfaction survey with 5-7 questions for a [business type]."</li>
+</ol>
+<h3>Strategy</h3>
+<ol>
+<li>"Analyze this competitor's website [URL] and suggest 3 ways we can differentiate our [business type]."</li>
+<li>"What are the top 5 local SEO keywords for a [business type] in [city]?"</li>
+<li>"Create a 90-day marketing plan for a [business type] with a budget of $[amount]/month."</li>
+</ol>
+<h3>Business Planning</h3>
+<ol>
+<li>"What are the most common pain points for customers of a [business type]? Create content ideas to address each one."</li>
+<li>"Suggest 3 partnership opportunities for a [business type] in [city] that could drive referrals."</li>
+<li>"Create a pricing comparison table for [service] that shows our value vs. competitors."</li>
+<li>"Write a quarterly business review outline for a [business type] — what metrics should we track?"</li>
+<li>"What AI tools should a [business type] with [X] employees adopt first? Prioritize by ROI and ease of implementation."</li>
+</ol>
+<hr>
+<h2>Part 5: 30-Day Quick-Start Roadmap</h2>
+<h3>Week 1: Foundation</h3>
+<ul>
+<li>[ ] Sign up for ChatGPT and experiment with 3 prompts from Part 4</li>
+<li>[ ] Set up Canva (free) and create your first social media graphic</li>
+<li>[ ] Audit your current tools — what are you paying for that AI could replace?</li>
+<li>[ ] Choose your $27/mo stack from Part 3</li>
+</ul>
+<h3>Week 2: First Automations</h3>
+<ul>
+<li>[ ] Set up instant lead follow-up (Automation 1)</li>
+<li>[ ] Set up appointment reminders (Automation 4)</li>
+<li>[ ] Use ChatGPT to write 5 social media posts</li>
+<li>[ ] Create a Google Business post using AI</li>
+</ul>
+<h3>Week 3: Content & Reviews</h3>
+<ul>
+<li>[ ] Set up review request automation (Automation 2)</li>
+<li>[ ] Build a content calendar for the next 30 days using AI</li>
+<li>[ ] Record a short video using ElevenLabs for voiceover</li>
+<li>[ ] Try Midjourney or DALL-E for a custom image</li>
+</ul>
+<h3>Week 4: Scale</h3>
+<ul>
+<li>[ ] Set up invoice/payment reminders (Automation 5)</li>
+<li>[ ] Build a simple funnel or landing page</li>
+<li>[ ] Analyze your first 30 days — what worked, what didn't?</li>
+<li>[ ] Join the Your AI Plug community for ongoing support</li>
+</ul>
+<hr>
+<h2>Bonus: AI Readiness Checklist</h2>
+<p>Rate yourself 1-5 on each item. If you score below 20, start with Week 1 of the roadmap.</p>
+<ul>
+<li>[ ] I can describe my ideal customer in one sentence (1-5)</li>
+<li>[ ] I have a website, even a basic one (1-5)</li>
+<li>[ ] I'm active on at least one social media platform (1-5)</li>
+<li>[ ] I have a way to capture leads (form, phone, email) (1-5)</li>
+<li>[ ] I follow up with leads within 24 hours (1-5)</li>
+<li>[ ] I collect reviews from happy customers (1-5)</li>
+<li>[ ] I know what tasks take the most time each week (1-5)</li>
+<li>[ ] I'm willing to spend 30 minutes learning a new tool (1-5)</li>
+</ul>
+<p><strong>Score 35-40:</strong> You're ready for advanced automation</p>
+<p><strong>Score 25-34:</strong> Focus on the first 3 automations</p>
+<p><strong>Score 15-24:</strong> Start with the foundation (Week 1)</p>
+<p><strong>Score below 15:</strong> Start with one tool (ChatGPT) and one task</p>
+<hr>
+<p><strong>© 2026 Your AI Plug</strong> — Lubbock, TX</p>
+<p>Free to share. Just keep the attribution.</p>
+<div class="cta-box"><h3>Ready for the full course?</h3><p>Get access to all 5 modules + GHL sub-account + community for just $27/mo.</p><a href="/pricing.html">See Plans</a></div>
+</div>
+<div class="module" id="module-1">
+<div class="cta-box"><h3>Module 1: What Is AI (And Why Should You Care?)</h3></div>
+<h1>Module 1: What Is AI (And Why Should You Care?)</h1>
+<h2>Welcome</h2>
+<p>If you've been hearing about AI everywhere but still aren't sure what it actually means for your business, you're in the right place. This module cuts through the noise and gives you a clear picture of what AI can do for you right now — not someday, not in theory, but today.</p>
+<p>By the end of this module, you'll understand what AI is, what it isn't, and how local businesses just like yours are already using it to save time, make more money, and stop drowning in busywork.</p>
+<hr>
+<h2>Lesson 1: AI in Plain English</h2>
+<h3>What AI Actually Is</h3>
+<p>Forget the Hollywood robots. Forget the scary headlines. Here's what AI really is:</p>
+<p><strong>AI is software that does tasks that normally require a person.</strong></p>
+<p>That's it. It reads, it writes, it talks, it looks at pictures, it makes decisions. Not perfectly, but well enough to save you hours every single week.</p>
+<p>Think of it like this:</p>
+<ul>
+<li><strong>2005:</strong> You needed a bookkeeper to track your expenses. Then QuickBooks showed up and did most of it automatically.</li>
+<li><strong>2015:</strong> You needed a receptionist to answer every call. Then automated phone systems could handle basic questions.</li>
+<li><strong>2025:</strong> You needed a copywriter, a social media manager, a customer service rep, and a data analyst. Now AI can handle a big chunk of all four.</li>
+</ul>
+<p>Every few years, software gets smarter and takes over another piece of work that used to require a full-time person. AI is just the latest — and biggest — jump in that pattern.</p>
+<h3>What AI Is NOT</h3>
+<div class="table-wrapper"><table><tr><th>Myth</th><th>Reality</th></tr><tr><td>"AI will replace my business"</td><td>AI replaces <em>tasks</em>, not businesses. It's a tool, like a power drill vs. a screwdriver.</td></tr><tr><td>"AI is too complicated for me"</td><td>If you can send a text message, you can use AI. Most tools work just like chatting.</td></tr><tr><td>"AI is only for big companies"</td><td>AI tools today cost $20-50/month. A local pizza shop can use the same tech as Amazon.</td></tr><tr><td>"AI will sound robotic and hurt my brand"</td><td>Modern AI writes better than most people. You review everything before it goes out.</td></tr><tr><td>"I need to learn to code"</td><td>Absolutely not. Every tool in this course works with plain English — just type what you want.</td></tr></table></div>
+<h3>The Real Story</h3>
+<p>Here's what actually happened that made AI useful for regular businesses:</p>
+<p>For decades, computers could only follow exact instructions. "If this happens, do that." They couldn't understand language, recognize patterns, or make judgment calls.</p>
+<p>In the last few years, that changed. Computers got good enough at understanding language that you can now just <em>tell them what you want</em> in plain English and they figure it out.</p>
+<p>That's the revolution. Not smarter computers — computers you can actually <em>talk to</em>.</p>
+<hr>
+<h2>Lesson 2: How Local Businesses Are Already Using AI</h2>
+<p>Let's skip the theory and look at real businesses doing real things with AI right now.</p>
+<h3>Example 1: The Roofing Company</h3>
+<p><strong>Problem:</strong> Jake runs a roofing company with 12 employees. He spends 2-3 hours every evening answering calls he missed during the day, writing estimates, and following up with leads.</p>
+<p><strong>What he did:</strong> Set up an AI system that:</p>
+<ul>
+<li>Answers missed calls and asks the right questions (What's the issue? What's the address? When are you available?)</li>
+<li>Sends him a summary of every call with the customer's info</li>
+<li>Follows up with leads automatically via text if they don't respond within 24 hours</li>
+<li>Writes first drafts of estimates based on the call notes</li>
+</ul>
+<p><strong>Result:</strong> Jake gets his evenings back. His response time went from 24+ hours to under 10 minutes. He closes 30% more jobs because he's the first one to respond.</p>
+<p><strong>Cost:</strong> $47/month for the AI tools.</p>
+<h3>Example 2: The Dental Practice</h3>
+<p><strong>Problem:</strong> Dr. Patel's front desk spends half their day answering the same questions over and over. "Do you take my insurance?" "What are your hours?" "How much is a cleaning?"</p>
+<p><strong>What she did:</strong> Added an AI chat assistant to her website and text line that:</p>
+<ul>
+<li>Answers common questions instantly, 24/7</li>
+<li>Handles appointment scheduling</li>
+<li>Collects insurance information before the visit</li>
+<li>Only escalates to a real person for complex situations</li>
+</ul>
+<p><strong>Result:</strong> Her front desk now focuses on in-office patients instead of the phone. After-hours appointments went up 40% because people can now book at 10pm when they're actually thinking about it.</p>
+<p><strong>Cost:</strong> $67/month for the AI assistant + scheduling tools.</p>
+<h3>Example 3: The Real Estate Agent</h3>
+<p><strong>Problem:</strong> Maria is a solo agent. She needs social media content, listing descriptions, email newsletters, and market updates — but she doesn't have time to write any of it.</p>
+<p><strong>What she did:</strong> Uses AI to:</p>
+<ul>
+<li>Write listing descriptions from photos and basic details</li>
+<li>Create 30 days of social media posts in one hour</li>
+<li>Draft weekly email newsletters with market insights</li>
+<li>Write personalized follow-up messages to open house visitors</li>
+</ul>
+<p><strong>Result:</strong> Maria posts consistently for the first time ever. Her engagement tripled. She closed two deals directly from social media leads in the first 60 days.</p>
+<p><strong>Cost:</strong> $30/month for the AI writing tool.</p>
+<h3>The Pattern</h3>
+<p>Notice what all three have in common:</p>
+<ol>
+<li>They picked specific, repetitive tasks that eat their time</li>
+<li>They started with ONE tool, not ten</li>
+<li>They spent less than $100/month</li>
+<li>They saw results within the first week</li>
+</ol>
+<p>That's the playbook. You don't need to transform your entire business overnight. You need to find the one or two things that drain your time and let AI handle them.</p>
+<hr>
+<h2>Lesson 3: Finding Your Biggest Time Drains</h2>
+<p>Before you start picking AI tools, you need to know where your time actually goes. Most business owners <em>think</em> they know, but they're usually wrong.</p>
+<h3>The Time Audit Exercise</h3>
+<p>For the next 3 days, keep a simple log. Every time you switch tasks, jot down what you're doing. Don't overthink it — just quick notes:</p>
+<div class="table-wrapper"><table><tr><th>Time</th><th>What I'm Doing</th><th>Could Someone/Something Else Do This?</th></tr><tr><td>8:00 AM</td><td>Checking emails</td><td>Maybe — most are routine</td></tr><tr><td>8:45 AM</td><td>Writing social post</td><td>Yes — AI could draft this</td></tr><tr><td>9:30 AM</td><td>Returning phone calls</td><td>Yes — half are the same questions</td></tr><tr><td>10:15 AM</td><td>Meeting with client</td><td>No — this needs me</td></tr><tr><td>11:00 AM</td><td>Writing estimate</td><td>Maybe — AI could do first draft</td></tr></table></div>
+<h3>What You're Looking For</h3>
+<p>Circle anything that fits these descriptions:</p>
+<p><strong>High-value targets for AI:</strong></p>
+<ul>
+<li>✅ You do it the same way every time</li>
+<li>✅ It takes more than 30 minutes per day</li>
+<li>✅ You dread doing it</li>
+<li>✅ It requires writing (emails, posts, descriptions)</li>
+<li>✅ It involves answering common questions</li>
+<li>✅ You keep putting it off</li>
+</ul>
+<p><strong>Not good targets for AI:</strong></p>
+<ul>
+<li>❌ Requires your personal relationships</li>
+<li>❌ Involves complex decisions with major financial impact</li>
+<li>❌ Needs physical presence</li>
+<li>❌ Is unique every single time</li>
+</ul>
+<h3>The Top 5 Time Drains for Most Local Businesses</h3>
+<p>Based on what we've seen across hundreds of businesses, these are the biggest time sucks — and where AI helps most:</p>
+<div class="table-wrapper"><table><tr><th>Time Drain</th><th>Average Hours/Week</th><th>AI Can Handle</th></tr><tr><td>Social media content creation</td><td>5-8 hours</td><td>80% of it</td></tr><tr><td>Responding to leads and follow-ups</td><td>4-6 hours</td><td>70% of it</td></tr><tr><td>Writing emails, proposals, descriptions</td><td>3-5 hours</td><td>90% of it</td></tr><tr><td>Answering customer questions</td><td>3-4 hours</td><td>60% of it</td></tr><tr><td>Administrative paperwork</td><td>4-6 hours</td><td>50% of it</td></tr></table></div>
+<p><strong>Total potential time saved: 12-20 hours per week.</strong></p>
+<p>That's not hype. That's the average across real businesses that implement even basic AI tools.</p>
+<hr>
+<h2>Lesson 4: Your AI Readiness Score</h2>
+<p>Answer these questions honestly. There's no grade — this just tells you where to start.</p>
+<h3>Score Yourself (1 = Never, 5 = Always)</h3>
+<div class="table-wrapper"><table><tr><th>Question</th><th>Score (1-5)</th></tr><tr><td>I spend more than 2 hours per day on tasks that feel repetitive</td><td>___</td></tr><tr><td>I wish I could respond to leads faster</td><td>___</td></tr><tr><td>I struggle to post on social media consistently</td><td>___</td></tr><tr><td>I write the same types of emails over and over</td><td>___</td></tr><tr><td>I miss calls or take too long to follow up</td><td>___</td></tr><tr><td>I want to grow but can't afford to hire more staff</td><td>___</td></tr><tr><td>My competitors seem to be everywhere online and I'm not</td><td>___</td></tr><tr><td>I spend evenings catching up on admin work</td><td>___</td></tr></table></div>
+<h3>Your Score</h3>
+<div class="table-wrapper"><table><tr><th>Total</th><th>What It Means</th></tr><tr><td><strong>8-15</strong></td><td>You're in good shape. AI can help, but focus on one specific area first.</td></tr><tr><td><strong>16-25</strong></td><td>You're leaving time and money on the table. Start with your two biggest pain points.</td></tr><tr><td><strong>26-32</strong></td><td>You're overwhelmed and AI can be a game-changer. You'll see results fast. Start immediately.</td></tr></table></div>
+<h3>What To Do With Your Score</h3>
+<p>No matter where you land, the next module shows you exactly which tools to start with. We'll match your biggest pain points to specific tools you can set up this week.</p>
+<hr>
+<h2>Module 1 Action Items</h2>
+<p>Before moving to Module 2, complete these:</p>
+<ul>
+<li>[ ] <strong>Do the 3-day time audit</strong> — Track where your time actually goes</li>
+<li>[ ] <strong>Identify your top 2 time drains</strong> — The ones that eat the most hours</li>
+<li>[ ] <strong>Take the readiness score</strong> — Know where you stand</li>
+<li>[ ] <strong>Join the community</strong> — Post your top time drain in #getting-started. We'll help you pick your first tool.</li>
+</ul>
+<hr>
+<h2>Quick Reference</h2>
+<p><strong>Key Takeaway:</strong> AI is software that handles tasks that normally need a person — writing, answering questions, following up with leads, creating content. Local businesses are saving 12-20 hours per week with tools that cost $20-70/month. You don't need to be technical. You need to identify your biggest time drain and start there.</p>
+<p><strong>What's Next:</strong> Module 2 — The Essential AI Toolkit. We'll walk through the exact tools, what they cost, and how to set them up step by step.</p>
+<div class="cta-box"><h3>Keep Going!</h3><p>Complete all 5 modules to master AI for your business.</p><a href="/pricing.html">Unlock All Courses</a></div>
+<div class="bottom-nav"><button disabled>← Previous</button><button onclick="showModule(2)">Module 2: The Essential AI Toolkit →</button></div>
+</div>
+<div class="module" id="module-2">
+<div class="cta-box"><h3>Module 2: The Essential AI Toolkit</h3></div>
+<h1>Module 2: The Essential AI Toolkit</h1>
+<h2>Welcome</h2>
+<p>Now that you understand what AI is and where it can help, it's time to pick your tools. This module gives you a curated list — not 100 options to research, but the specific tools that work best for local businesses, what they cost, and exactly how to set them up.</p>
+<p>No overwhelm. No analysis paralysis. Just the right tools for the job.</p>
+<hr>
+<h2>Lesson 1: The Only 5 Tools You Need to Know About</h2>
+<p>There are thousands of AI tools out there. 95% of them won't help your business. Here are the ones that will.</p>
+<h3>Tool 1: ChatGPT or Claude (AI Assistant)</h3>
+<p><strong>What it is:</strong> A website where you type questions or requests and get intelligent answers back. Like texting a really smart assistant.</p>
+<p><strong>What you use it for:</strong></p>
+<ul>
+<li>Writing emails, social posts, descriptions, proposals</li>
+<li>Brainstorming ideas</li>
+<li>Researching topics</li>
+<li>Editing and improving things you've already written</li>
+<li>Creating templates you can reuse</li>
+</ul>
+<p><strong>Cost:</strong> Free tier available. $20/month for the paid version (worth it).</p>
+<p><strong>Best for:</strong> Everyone. This is your starting point if you use nothing else.</p>
+<p><strong>Real example:</strong></p>
+<p>> "Write me a Facebook post for my plumbing business about the importance of water heater maintenance before winter. Keep it friendly, not salesy. Include a call to action to book a free inspection."</p>
+<p>That's it. Type that in, get a polished post in 10 seconds. Edit it to sound like you, post it. Done.</p>
+<h3>Tool 2: Canva with Magic Studio (Design + AI)</h3>
+<p><strong>What it is:</strong> A design tool that now has AI built in. Makes social media graphics, flyers, business cards, and more.</p>
+<p><strong>What you use it for:</strong></p>
+<ul>
+<li>Social media graphics (already sized for each platform)</li>
+<li>Before/after photos with text overlay</li>
+<li>Promotional flyers</li>
+<li>Business cards</li>
+<li>Simple video content</li>
+</ul>
+<p><strong>Cost:</strong> Free tier available. $13/month for Pro (worth it for the templates and brand kit).</p>
+<p><strong>Best for:</strong> Any business that needs visual content — which is every business.</p>
+<p><strong>Why it's on this list:</strong> Canva's AI features now let you describe what you want and it designs it. "Create an Instagram post promoting 20% off HVAC tune-ups with a summer theme." It builds it. You tweak the colors and text. 5 minutes instead of 50.</p>
+<h3>Tool 3: GoHighLevel (CRM + Automation)</h3>
+<p><strong>What it is:</strong> An all-in-one platform that handles your customer relationships, automates follow-ups, builds websites and funnels, and manages your online reputation.</p>
+<p><strong>What you use it for:</strong></p>
+<ul>
+<li>Storing customer information (CRM)</li>
+<li>Automatically following up with leads via text and email</li>
+<li>Building landing pages and simple websites</li>
+<li>Collecting and managing online reviews</li>
+<li>Appointment scheduling</li>
+<li>Running email and text marketing campaigns</li>
+</ul>
+<p><strong>Cost:</strong> $97/month directly, or FREE with a Your AI Plug Starter membership ($27/month).</p>
+<p><strong>Best for:</strong> Any business that gets leads and needs to follow up with them. Especially service businesses.</p>
+<p><strong>Why it matters:</strong> Most businesses lose 50-80% of their leads because they don't follow up fast enough. GHL automates that entire process. A lead fills out a form on your website at 10pm? They get a personalized text in 30 seconds, an email in 2 minutes, and a follow-up the next morning — all without you touching anything.</p>
+<h3>Tool 4: ManyChat or Chatfuel (Chat Automation)</h3>
+<p><strong>What it is:</strong> Tools that let you build automated conversations for Instagram DMs, Facebook Messenger, and your website chat.</p>
+<p><strong>What you use it for:</strong></p>
+<ul>
+<li>Answering common questions automatically</li>
+<li>Capturing leads from social media comments</li>
+<li>Booking appointments through chat</li>
+<li>Sending promotions to people who message you</li>
+<li>Building a "DM me KEYWORD" system for Instagram</li>
+</ul>
+<p><strong>Cost:</strong> Free tier available. $15-25/month for business features.</p>
+<p><strong>Best for:</strong> Businesses active on Instagram or Facebook. Anyone getting DMs they can't keep up with.</p>
+<p><strong>Real example:</strong></p>
+<p>> Someone comments "INFO" on your Instagram post about your services. ManyChat automatically DMs them with a welcome message, asks what they're interested in, and sends them to your booking page. You didn't touch anything. That person just became a lead.</p>
+<h3>Tool 5: Loom or ScreenPal (Quick Video)</h3>
+<p><strong>What it is:</strong> Tools that record your screen and face so you can create quick videos — tutorials, walkthroughs, explanations.</p>
+<p><strong>What you use it for:</strong></p>
+<ul>
+<li>Recording quick how-to videos for customers</li>
+<li>Creating video responses instead of long emails</li>
+<li>Training employees on processes</li>
+<li>Recording video testimonials or case studies</li>
+<li>Making social media content (screen recordings with your face)</li>
+</ul>
+<p><strong>Cost:</strong> Free tier available. $15/month for business features.</p>
+<p><strong>Best for:</strong> Any business that explains the same things repeatedly. "Let me just show you" is more powerful than writing it out.</p>
+<p><strong>Why it's here:</strong> Video content gets 10x the engagement of text on social media. And most of your competitors aren't doing it. A 2-minute video recorded on your phone or laptop beats a perfectly designed graphic every time.</p>
+<hr>
+<h2>Lesson 2: The $27/Month Stack</h2>
+<p>If you're on a tight budget, start here. This stack costs less than a Netflix subscription and handles 80% of what you need.</p>
+<div class="table-wrapper"><table><tr><th>Tool</th><th>Cost</th><th>What It Handles</th></tr><tr><td>ChatGPT Free</td><td>$0</td><td>Writing, brainstorming, research</td></tr><tr><td>Canva Free</td><td>$0</td><td>Social graphics, flyers, simple designs</td></tr><tr><td>Your AI Plug Starter</td><td>$27/mo</td><td>GoHighLevel CRM, automation, reputation, landing pages</td></tr><tr><td><strong>Total</strong></td><td><strong>$27/month</strong></td><td>Writing + Design + CRM + Automation + Follow-up</td></tr></table></div>
+<p><strong>What this replaces:</strong></p>
+<ul>
+<li>Social media manager: $500-2,000/month</li>
+<li>Virtual assistant for follow-ups: $500-1,500/month</li>
+<li>CRM software: $50-150/month</li>
+<li>Email marketing tool: $30-100/month</li>
+<li>Graphic designer: $300-1,000/month</li>
+</ul>
+<p><strong>Total value you're getting:</strong> $1,380-4,750/month worth of capabilities for $27/month.</p>
+<h3>The Upgrade Path</h3>
+<p>Start with the $27 stack. Once you're making money from it, upgrade strategically:</p>
+<div class="table-wrapper"><table><tr><th>When You're Ready</th><th>Add This</th><th>Cost</th><th>Unlocks</th></tr><tr><td>You're posting daily</td><td>Canva Pro</td><td>$13/mo</td><td>Brand kit, more templates, video editing</td></tr><tr><td>You need more writing power</td><td>ChatGPT Plus</td><td>$20/mo</td><td>Better responses, image creation, custom bots</td></tr><tr><td>You're getting 50+ leads/month</td><td>ManyChat</td><td>$25/mo</td><td>Instagram/Facebook DM automation</td></tr><tr><td>You want to level up</td><td>Your AI Plug Pro</td><td>$97/mo</td><td>Full GHL account, advanced courses, live training</td></tr><tr><td>You need more video</td><td>Loom Business</td><td>$15/mo</td><td>Longer videos, analytics, team sharing</td></tr></table></div>
+<p><strong>The rule:</strong> Don't upgrade until the free or basic version is paying for itself.</p>
+<hr>
+<h2>Lesson 3: Setting Up Your First Tool (Step by Step)</h2>
+<p>Let's set up the most important one: <strong>GoHighLevel through Your AI Plug.</strong></p>
+<p>This handles your customer database, follow-up automation, review collection, and appointment scheduling — all in one place. It's the backbone of everything else.</p>
+<h3>Step 1: Get Your Account</h3>
+<ol>
+<li>Go to <a href="https://youraiplug.com/pricing" target="_blank">youraiplug.com/pricing</a></li>
+<li>Choose the Starter plan ($27/month)</li>
+<li>Complete checkout</li>
+<li>You'll receive your GoHighLevel login within 24 hours</li>
+</ol>
+<h3>Step 2: Set Up Your Business Profile</h3>
+<p>Once you log in:</p>
+<ol>
+<li><strong>Settings → Company</strong> — Add your business name, logo, phone number, email, and address</li>
+<li><strong>Settings → Business Profile</strong> — Add your hours, website, and social media links</li>
+<li><strong>Settings → Phone Numbers</strong> — Get your tracking number (this lets you see which marketing is working)</li>
+</ol>
+<h3>Step 3: Import Your Contacts</h3>
+<p>You probably have customer information scattered everywhere — phone contacts, old spreadsheets, email lists. Let's consolidate.</p>
+<ol>
+<li><strong>Contacts → Import</strong> — Upload a CSV file of your contacts</li>
+<li>Include at minimum: Name, Phone, Email</li>
+<li>Add tags to organize them (e.g., "past customer", "lead", "vip")</li>
+</ol>
+<p><strong>Don't have a CSV?</strong> Export from your phone, your email program, or just type them in manually for your top 50 customers to start.</p>
+<h3>Step 4: Set Up Your First Automation</h3>
+<p>This is where the magic happens. Let's create a simple "new lead" automation:</p>
+<ol>
+<li><strong>Automation → Create Workflow</strong></li>
+<li>Choose "Start from Scratch"</li>
+<li>Set the trigger: "When a form is submitted" or "When a tag is added"</li>
+<li>Add your first action: <strong>Send SMS</strong></li>
+<li>Write a friendly message: "Hi {first_name}! Thanks for reaching out to [Your Business]. I'll get back to you shortly, but in the meantime, here's a link to schedule a time that works for you: [your booking link]"</li>
+<li>Add second action (wait 5 minutes): <strong>Send Email</strong></li>
+<li>A brief email introducing yourself and your services</li>
+<li>Add third action (wait 24 hours, if no reply): <strong>Send Follow-up SMS</strong></li>
+<li>"Hi {first_name}, just checking in! Did you have any questions I can help with?"</li>
+</ol>
+<p>That's it. Now every new lead gets an instant response, a follow-up email, and a next-day check-in. Without you lifting a finger.</p>
+<h3>Step 5: Set Up Your Reputation Tool</h3>
+<ol>
+<li><strong>Reputation → Settings</strong></li>
+<li>Connect your Google Business Profile</li>
+<li>Create a review request template: "Hi {first_name}, thank you for choosing [Your Business]! Would you mind leaving us a quick review? It really helps us out: {review_link}"</li>
+<li>Set up automation to send this after every completed job/appointment</li>
+</ol>
+<p><strong>Why this matters:</strong> Businesses with 50+ Google reviews get 3-5x more calls than businesses with fewer than 10. Automating review requests is the single easiest way to grow your local presence.</p>
+<hr>
+<h2>Module 2 Action Items</h2>
+<ul>
+<li>[ ] <strong>Sign up for ChatGPT</strong> (free) — Try writing one social media post or email with it</li>
+<li>[ ] <strong>Sign up for Canva</strong> (free) — Create one social media graphic</li>
+<li>[ ] <strong>Get Your AI Plug Starter</strong> ($27/mo) — This is your home base</li>
+<li>[ ] <strong>Complete the GHL setup steps</strong> above — Business profile, contacts, first automation, reputation</li>
+<li>[ ] <strong>Post in the community</strong> — Share your setup progress in #tool-setup</li>
+</ul>
+<hr>
+<h2>Quick Reference</h2>
+<p><strong>Key Takeaway:</strong> You don't need dozens of tools. Start with the $27/month stack: ChatGPT (free) + Canva (free) + Your AI Plug Starter (GoHighLevel). This covers writing, design, CRM, automation, and follow-up. Add more tools only when the basics are paying for themselves.</p>
+<p><strong>What's Next:</strong> Module 3 — Automating Your Business. We'll build specific automations for lead follow-up, appointment reminders, review collection, and more.</p>
+<div class="cta-box"><h3>Keep Going!</h3><p>Complete all 5 modules to master AI for your business.</p><a href="/pricing.html">Unlock All Courses</a></div>
+<div class="bottom-nav"><button onclick="showModule(1)">← Module 1: What Is AI</button><button onclick="showModule(3)">Module 3: Automating Your Business →</button></div>
+</div>
+<div class="module" id="module-3">
+<div class="cta-box"><h3>Module 3: Automating Your Business</h3></div>
+<h1>Module 3: Automating Your Business</h1>
+<h2>Welcome</h2>
+<p>In Module 2, you set up your tools. Now we're going to make them work while you sleep.</p>
+<p>Automation is where AI goes from "neat trick" to "actual business impact." This module walks you through building specific automations that run on their own — following up with leads, reminding customers about appointments, collecting reviews, and keeping your business moving even when you're off the clock.</p>
+<hr>
+<h2>Lesson 1: The Lead Response Machine</h2>
+<p>The fastest way to lose a customer? Make them wait.</p>
+<p>Here's the reality:</p>
+<div class="table-wrapper"><table><tr><th>Response Time</th><th>Chance of Closing</th></tr><tr><td>Under 5 minutes</td><td>9x more likely</td></tr><tr><td>Under 1 hour</td><td>7x more likely</td></tr><tr><td>Under 24 hours</td><td>5x more likely</td></tr><tr><td>Over 24 hours</td><td>Almost zero</td></tr></table></div>
+<p>Most local businesses take 12-48 hours to respond to leads. By then, the customer has already called someone else.</p>
+<p><strong>The fix:</strong> An automation that responds instantly and keeps following up until they book or say no.</p>
+<h3>Building Your Lead Response Automation</h3>
+<p>In GoHighLevel:</p>
+<p><strong>Step 1: Create the workflow</strong></p>
+<ol>
+<li>Go to Automation → Workflows → Create New</li>
+<li>Name it "New Lead Response"</li>
+<li>Set the trigger: "Contact tag added" → tag name: "new-lead"</li>
+</ol>
+<p><strong>Step 2: Instant response (0 minutes)</strong></p>
+<ol>
+<li>Add action: Send SMS</li>
+<li>Message: "Hi {first_name}! Thanks for reaching out to [Business Name]. I got your message and I'll be in touch shortly. In the meantime, feel free to book a time that works for you here: [booking link]"</li>
+<li>Add action: Internal notification (email to you) — "New lead: {first_name} {last_name} — {phone} — {email}"</li>
+</ol>
+<p><strong>Step 3: Follow-up 1 (24 hours later, if no appointment booked)</strong></p>
+<ol>
+<li>Add action: Wait → 24 hours</li>
+<li>Add condition: "Has appointment booked?" → No</li>
+<li>Add action: Send SMS</li>
+<li>Message: "Hi {first_name}, just checking in! I wanted to make sure you had everything you need. Do you have any questions I can help with?"</li>
+</ol>
+<p><strong>Step 4: Follow-up 2 (3 days later, if still no appointment)</strong></p>
+<ol>
+<li>Add action: Wait → 3 days</li>
+<li>Add condition: "Has appointment booked?" → No</li>
+<li>Add action: Send SMS</li>
+<li>Message: "Hey {first_name}, I know things get busy! Just wanted to remind you that I'm here whenever you're ready. Here's my booking link again if that's easier: [link]"</li>
+</ol>
+<p><strong>Step 5: Follow-up 3 (7 days later — final nudge)</strong></p>
+<ol>
+<li>Add action: Wait → 7 days</li>
+<li>Add condition: "Has appointment booked?" → No</li>
+<li>Add action: Send SMS</li>
+<li>Message: "Hi {first_name}, this is my last message — I don't want to bug you! If you still need help with [your service], just reply to this text anytime. Have a great week!"</li>
+</ol>
+<p><strong>Step 6: End or move to nurture</strong></p>
+<ol>
+<li>Add tag: "follow-up-complete"</li>
+<li>Optionally move to a monthly newsletter list</li>
+</ol>
+<h3>What This Replaces</h3>
+<div class="table-wrapper"><table><tr><th>Before</th><th>After</th></tr><tr><td>Manually checking for new leads</td><td>Automatic instant notification</td></tr><tr><td>Remembering to follow up</td><td>Automatic timed follow-ups</td></tr><tr><td>Copying and pasting the same texts</td><td>Pre-written messages sent automatically</td></tr><tr><td>Losing leads while you're busy/sleeping</td><td>24/7 response, no matter what</td></tr></table></div>
+<p><strong>Time saved:</strong> 4-6 hours per week for most businesses.</p>
+<hr>
+<h2>Lesson 2: The Appointment Reminder System</h2>
+<p>No-shows and last-minute cancellations cost local businesses thousands per month. The average no-show rate for service businesses is 20-30%.</p>
+<p>An automated reminder system drops that to under 5%.</p>
+<h3>Building Your Reminder Sequence</h3>
+<p><strong>Step 1: Create the workflow</strong></p>
+<ol>
+<li>Go to Automation → Workflows → Create New</li>
+<li>Name it "Appointment Reminders"</li>
+<li>Trigger: "Appointment booked"</li>
+</ol>
+<p><strong>Step 2: Confirmation (immediate)</strong></p>
+<ol>
+<li>Send SMS: "You're all set, {first_name}! Your appointment with [Business Name] is confirmed for {appointment_date} at {appointment_time}. Reply CONFIRM to keep your spot or RESCHEDULE if you need to change it. See you then!"</li>
+</ol>
+<p><strong>Step 3: Reminder 1 (48 hours before)</strong></p>
+<ol>
+<li>Wait until 48 hours before appointment</li>
+<li>Send SMS: "Reminder: You have an appointment with [Business Name] tomorrow at {appointment_time}. We're looking forward to seeing you! Reply CANCEL if you need to reschedule."</li>
+</ol>
+<p><strong>Step 4: Reminder 2 (2 hours before)</strong></p>
+<ol>
+<li>Wait until 2 hours before appointment</li>
+<li>Send SMS: "See you in 2 hours, {first_name}! Our address is [address]. If you need to reach us, call [phone]."</li>
+</ol>
+<p><strong>Step 5: Post-appointment follow-up (1 hour after)</strong></p>
+<ol>
+<li>Wait until 1 hour after appointment end time</li>
+<li>Send SMS: "Thanks for coming in today, {first_name}! We hope everything went great. If you have any questions, don't hesitate to reach out."</li>
+<li>Wait 1 hour</li>
+<li>Trigger review request (see Lesson 3)</li>
+</ol>
+<h3>Pro Tips</h3>
+<ul>
+<li><strong>Allow easy cancellation.</strong> "Reply CANCEL" seems like it would increase cancellations, but it actually reduces no-shows. People who would have ghosted you instead cancel, which opens that slot for someone else.</li>
+<li><strong>Include the address.</strong> People forget where you are. Sounds obvious, but a surprising number of no-shows are because people couldn't find the location.</li>
+<li><strong>Personalize when possible.</strong> If you know what service they're booked for, include it: "Your [deep cleaning] appointment is tomorrow."</li>
+</ul>
+<hr>
+<h2>Lesson 3: The Review Collection Machine</h2>
+<p>Reviews are the currency of local business. Here's how to automate collecting them.</p>
+<h3>Why This Matters</h3>
+<div class="table-wrapper"><table><tr><th>Google Reviews</th><th>Impact</th></tr><tr><td>0-10 reviews</td><td>Blending in with competitors</td></tr><tr><td>25-50 reviews</td><td>Starting to stand out</td></tr><tr><td>50-100 reviews</td><td>Noticeably more trusted</td></tr><tr><td>100+ reviews</td><td>Dominating your local market</td></tr></table></div>
+<p>Most happy customers will leave a review if you ask. Most businesses never ask.</p>
+<h3>Building Your Review Request Automation</h3>
+<p><strong>Step 1: Create the workflow</strong></p>
+<ol>
+<li>Go to Automation → Workflows → Create New</li>
+<li>Name it "Review Request"</li>
+<li>Trigger: "Tag added" → tag: "job-complete" (or whatever you use to mark finished work)</li>
+</ol>
+<p><strong>Step 2: Immediate thank you</strong></p>
+<ol>
+<li>Send SMS: "Thank you for choosing [Business Name], {first_name}! It was a pleasure working with you. If you have 30 seconds, would you mind leaving us a quick review? It really helps us out: {review_link}"</li>
+</ol>
+<p><strong>Step 3: Gentle reminder (3 days later, if no review left)</strong></p>
+<ol>
+<li>Wait → 3 days</li>
+<li>Check: Has left review? (You'll need to track this manually or use GHL's reputation tool)</li>
+<li>If no review: Send SMS</li>
+<li>Message: "Hi {first_name}, hope you're doing well! If you have a moment, a quick review would mean the world to us: {review_link}. Thank you!"</li>
+</ol>
+<p><strong>Step 4: Stop. Don't ask a third time.</strong></p>
+<p>Two asks is enough. Pestering someone for a review can turn a happy customer into an annoyed one.</p>
+<h3>The Review Link</h3>
+<p>Make it as easy as possible. Your Google review link should take them directly to the review form — no searching required.</p>
+<p>To get your link:</p>
+<ol>
+<li>Go to your Google Business Profile</li>
+<li>Click "Ask for reviews"</li>
+<li>Copy the short link</li>
+<li>That's your <code>{review_link}</code> in the automation</li>
+</ol>
+<h3>Handling Bad Reviews</h3>
+<p>The automation only requests reviews from happy customers (after completed jobs). But what if someone leaves a negative review anyway?</p>
+<ol>
+<li>Respond within 24 hours</li>
+<li>Be professional and empathetic</li>
+<li>Take the conversation offline: "We're sorry about your experience. Please call us at [phone] so we can make this right."</li>
+<li>Never argue publicly</li>
+</ol>
+<p><strong>Template for negative review response:</strong></p>
+<p>> "Hi [Name], thank you for your feedback. We're sorry to hear your experience didn't meet expectations. We'd love the chance to make it right — please reach out to us at [phone/email] so we can discuss this directly. We appreciate your honesty and hope to resolve this for you."</p>
+<hr>
+<h2>Lesson 4: Social Media on Autopilot</h2>
+<p>This isn't about setting it and forgetting it. It's about batching your content so you spend 2 hours per month instead of 2 hours per day.</p>
+<h3>The Monthly Content Batch</h3>
+<p>Once per month, sit down and create 30 days of content. Here's how:</p>
+<p><strong>Step 1: Choose your themes</strong></p>
+<div class="table-wrapper"><table><tr><th>Week</th><th>Theme</th><th>Example Posts</th></tr><tr><td>Week 1</td><td>Educational</td><td>Tips, how-tos, myth-busting</td></tr><tr><td>Week 2</td><td>Behind the scenes</td><td>Your team, your process, day in the life</td></tr><tr><td>Week 3</td><td>Social proof</td><td>Reviews, before/after, customer stories</td></tr><tr><td>Week 4</td><td>Promotional</td><td>Offers, seasonal services, calls to action</td></tr></table></div>
+<p><strong>Step 2: Generate with AI</strong></p>
+<p>Open ChatGPT and use this prompt:</p>
+<p>> "I run a [type of business] in [city]. My target customers are [describe them]. I need 30 days of social media content for Facebook and Instagram. Use this weekly theme structure: Week 1 - Educational tips, Week 2 - Behind the scenes, Week 3 - Customer stories and reviews, Week 4 - Promotions. Give me the post text, suggested image/visual idea, and best posting time for each day."</p>
+<p>Edit the output to sound like you. Add your personality, your specific examples, your local references.</p>
+<p><strong>Step 3: Create visuals in Canva</strong></p>
+<p>Take each post's image idea and create it in Canva. Use your brand colors and fonts consistently. Save all graphics in a folder labeled by week.</p>
+<p><strong>Step 4: Schedule everything</strong></p>
+<p>Go back into GoHighLevel's Social Planner (or use your AI Plug account):</p>
+<ol>
+<li>Upload all graphics</li>
+<li>Copy/paste each post's text</li>
+<li>Schedule for the recommended times</li>
+<li>Hit save</li>
+</ol>
+<p>You now have 30 days of content scheduled in about 2 hours. Check in occasionally to respond to comments, but the posting itself is handled.</p>
+<h3>Content Ideas That Actually Work for Local Businesses</h3>
+<p>Not sure what to post? Here are proven formats:</p>
+<div class="table-wrapper"><table><tr><th>Content Type</th><th>Why It Works</th><th>Example</th></tr><tr><td>Before/After</td><td>Visual proof of your work</td><td>Photo of a dirty carpet → clean carpet</td></tr><tr><td>Quick Tips</td><td>People share helpful content</td><td>"3 signs your AC needs servicing before summer"</td></tr><tr><td>Customer Spotlight</td><td>Makes customers feel valued</td><td>Photo + quote from a happy customer</td></tr><tr><td>Myth Busting</td><td>Gets engagement and shows expertise</td><td>"No, you don't need to replace your water heater every 10 years — here's why"</td></tr><tr><td>Day in the Life</td><td>Builds personal connection</td><td>Short video of your morning routine or a typical job</td></tr><tr><td>Local Pride</td><td>Shows you're part of the community</td><td>Photos at local landmarks, supporting local events</td></tr><tr><td>FAQ Answers</td><td>Positions you as the expert</td><td>"We get this question all the time: [common question]. Here's the answer."</td></tr></table></div>
+<hr>
+<h2>Lesson 5: Putting It All Together</h2>
+<p>Here's what a fully automated week looks like:</p>
+<h3>Monday Morning</h3>
+<ul>
+<li>You wake up to 3 new leads from the weekend</li>
+<li>All 3 already received an instant text response and booking link on Saturday/Sunday</li>
+<li>1 has already booked an appointment</li>
+<li>You have a notification about who needs your personal follow-up</li>
+</ul>
+<h3>During the Week</h3>
+<ul>
+<li>Appointment reminders go out automatically — no-shows are rare</li>
+<li>Completed jobs trigger review requests automatically</li>
+<li>Social media posts go out on schedule — you didn't have to think about it</li>
+<li>New leads get the full follow-up sequence without you touching anything</li>
+</ul>
+<h3>Friday Evening</h3>
+<ul>
+<li>You get a notification: "5 new Google reviews this week"</li>
+<li>Your calendar for next week is full from automated booking</li>
+<li>You spent your time on actual work, not chasing leads or posting content</li>
+</ul>
+<p><strong>Total time spent on "marketing and admin":</strong> 3-5 hours instead of 15-20.</p>
+<hr>
+<h2>Module 3 Action Items</h2>
+<ul>
+<li>[ ] <strong>Build your Lead Response automation</strong> — Follow the steps in Lesson 1</li>
+<li>[ ] <strong>Set up Appointment Reminders</strong> — At minimum, do the 48-hour and 2-hour reminders</li>
+<li><strong>Create your Review Request workflow</strong> — Get your Google review link and build the automation</li>
+<li>[ ] <strong>Batch your first month of social content</strong> — Use the ChatGPT prompt + Canva + scheduling</li>
+<li>[ ] <strong>Post your first automation win in the community</strong> — We want to see it working!</li>
+</ul>
+<hr>
+<h2>Quick Reference</h2>
+<p><strong>Key Takeaway:</strong> Automate four things and you'll reclaim 10-15 hours per week: (1) instant lead response, (2) appointment reminders, (3) review requests, (4) social media scheduling. All four can be set up in a single afternoon using GoHighLevel.</p>
+<p><strong>What's Next:</strong> Module 4 — Growing Your Online Presence. We'll cover SEO basics, Google Business Profile optimization, and how to show up when local customers search for what you offer.</p>
+<div class="cta-box"><h3>Keep Going!</h3><p>Complete all 5 modules to master AI for your business.</p><a href="/pricing.html">Unlock All Courses</a></div>
+<div class="bottom-nav"><button onclick="showModule(2)">← Module 2: The Essential AI Toolkit</button><button onclick="showModule(4)">Module 4: Growing Your Online Presence →</button></div>
+</div>
+<div class="module" id="module-4">
+<div class="cta-box"><h3>Module 4: Growing Your Online Presence</h3></div>
+<h1>Module 4: Growing Your Online Presence</h1>
+<h2>Welcome</h2>
+<p>You've got your tools set up and your automations running. Now let's make sure people can actually find you.</p>
+<p>This module covers the essentials of getting visible online — your Google Business Profile, basic search optimization, and the simple things that make the difference between showing up on page one or getting buried.</p>
+<hr>
+<h2>Lesson 1: Your Google Business Profile (The #1 Priority)</h2>
+<p>If you do ONE thing from this entire course, do this.</p>
+<p>Your Google Business Profile (GBP) is the listing that shows up when someone searches for your type of business in your area. It's the box on the right side of Google with your hours, reviews, photos, and a call button.</p>
+<p><strong>For local businesses, this single listing drives more customers than your website, your social media, and your ads combined.</strong></p>
+<h3>Setting Up Your Profile (If You Haven't)</h3>
+<ol>
+<li>Go to <a href="https://business.google.com" target="_blank">business.google.com</a></li>
+<li>Click "Manage now"</li>
+<li>Enter your business name</li>
+<li>Choose your category (be specific — "Plumber" not "Home Services")</li>
+<li>Add your address (or service area if you go to customers)</li>
+<li>Add your phone number and website</li>
+<li>Verify your business (Google will send a postcard, call, or email)</li>
+</ol>
+<h3>Optimizing Your Profile (Do All of These)</h3>
+<p><strong>Business Name</strong></p>
+<ul>
+<li>Use your exact real-world business name</li>
+<li>Don't stuff keywords ("Joe's Plumbing Best Plumber in Dallas Plumbing Services") — Google penalizes this</li>
+</ul>
+<p><strong>Categories</strong></p>
+<ul>
+<li>Choose the MOST specific primary category</li>
+<li>Add secondary categories for other services</li>
+<li>Example: Primary: "Plumber" → Secondary: "Water Heater Installation Service", "Drain Cleaning Service"</li>
+</ul>
+<p><strong>Description</strong></p>
+<ul>
+<li>750 characters max</li>
+<li>Include: what you do, who you serve, what makes you different, your area</li>
+<li>Example: "Family-owned plumbing company serving the Dallas area since 2008. We specialize in water heater installation, drain cleaning, and emergency repairs. Available 24/7 for emergencies. Licensed, insured, and backed by 200+ five-star reviews."</li>
+</ul>
+<p><strong>Photos</strong></p>
+<ul>
+<li>Upload at least 10 photos minimum</li>
+<li>Include: storefront/vehicles, team photos, before/after work, equipment</li>
+<li>Add new photos monthly — businesses with 100+ photos get 520% more calls</li>
+</ul>
+<p><strong>Services/Products</strong></p>
+<ul>
+<li>Add every service you offer with a brief description and price range</li>
+<li>This helps you show up for specific searches</li>
+</ul>
+<p><strong>Hours</strong></p>
+<ul>
+<li>Keep them accurate and updated</li>
+<li>Add special hours for holidays</li>
+<li>If you offer 24/7 emergency service, list that</li>
+</ul>
+<p><strong>Q&A</strong></p>
+<ul>
+<li>Pre-load common questions and answers</li>
+<li>"Do you offer free estimates?" → "Yes, we offer free estimates on all projects over $500."</li>
+<li>"What areas do you serve?" → "We serve [list your cities/areas]."</li>
+<li>Check regularly for new questions from the public</li>
+</ul>
+<h3>The Posting Strategy</h3>
+<p>Google lets you post updates directly to your Business Profile — like social media posts, but they show up in Google search results.</p>
+<p><strong>Post at least once per week:</strong></p>
+<div class="table-wrapper"><table><tr><th>Post Type</th><th>Example</th></tr><tr><td>Offer</td><td>"20% off all AC tune-ups this month. Call to schedule!"</td></tr><tr><td>Update</td><td>"Just completed a full kitchen remodel in [neighborhood]. Check out the before and after!"</td></tr><tr><td>Event</td><td>"Join us at the [City] Home Show this Saturday — Booth #42"</td></tr><tr><td>Product/Service</td><td>"Now offering tankless water heater installations. Learn more."</td></tr></table></div>
+<p><strong>Each post should include:</strong></p>
+<ul>
+<li>A photo or short video</li>
+<li>Clear text (150-300 words)</li>
+<li>A call to action (Call now, Book online, Learn more)</li>
+<li>Your relevant service keywords (naturally, not stuffed)</li>
+</ul>
+<hr>
+<h2>Lesson 2: Showing Up in Local Search (SEO Basics)</h2>
+<p>SEO (Search Engine Optimization) sounds complicated. For local businesses, it comes down to a few key things.</p>
+<h3>How Google Decides Who Shows Up</h3>
+<p>When someone searches "plumber near me" or "dentist in Dallas," Google looks at three things:</p>
+<div class="table-wrapper"><table><tr><th>Factor</th><th>What It Means</th><th>How Important</th></tr><tr><td><strong>Relevance</strong></td><td>Does your business match what they're searching for?</td><td>Very important</td></tr><tr><td><strong>Distance</strong></td><td>How close are you to the searcher?</td><td>Very important</td></tr><tr><td><strong>Prominence</strong></td><td>How well-known and trusted is your business?</td><td>Important</td></tr></table></div>
+<p>You can't control where you're located. But you CAN control relevance (your categories, services, content) and prominence (your reviews, links, citations).</p>
+<h3>The 5 Things That Actually Move the Needle</h3>
+<p><strong>1. Get More Reviews (and Respond to All of Them)</strong></p>
+<p>You already set up the review automation in Module 3. Here's the additional step:</p>
+<p>Respond to every single review — positive or negative. Within 48 hours.</p>
+<p>For positive reviews:</p>
+<p>> "Thank you so much, [Name]! We're glad we could help with your [service]. We appreciate you trusting us with your [home/business]!"</p>
+<p>For negative reviews (as covered in Module 3):</p>
+<p>> "We're sorry about your experience, [Name]. We'd like to make this right — please call us at [phone] so we can discuss this directly."</p>
+<p>Google has confirmed that responding to reviews improves your ranking.</p>
+<p><strong>2. Keep Your Information Consistent Everywhere</strong></p>
+<p>Your business Name, Address, and Phone number (NAP) should be identical across:</p>
+<ul>
+<li>Your website</li>
+<li>Google Business Profile</li>
+<li>Facebook</li>
+<li>Yelp</li>
+<li>Angi (formerly Angie's List)</li>
+<li>Nextdoor</li>
+<li>Your local chamber of commerce website</li>
+<li>Any other directory you're listed in</li>
+</ul>
+<p>If your address says "123 Main Street" on Google but "123 Main St." on Yelp, that inconsistency hurts your ranking. Pick one format and use it everywhere.</p>
+<p><strong>3. Build Local Citations</strong></p>
+<p>A citation is any place online that mentions your business name, address, and phone number. The more quality citations you have, the more Google trusts that you're a real, established business.</p>
+<p><strong>Where to get listed (all free):</strong></p>
+<div class="table-wrapper"><table><tr><th>Directory</th><th>Action</th></tr><tr><td>Yelp</td><td>Claim/create your listing</td></tr><tr><td>Facebook Business</td><td>Create or claim your page</td></tr><tr><td>Bing Places</td><td>Claim your listing</td></tr><tr><td>Apple Maps</td><td>Claim through Apple Business Connect</td></tr><tr><td>Nextdoor</td><td>Create a business page</td></tr><tr><td>Angi</td><td>Claim your listing</td></tr><tr><td>BBB</td><td>Get listed (free basic listing)</td></tr><tr><td>Local Chamber of Commerce</td><td>Join and get a website listing</td></tr><tr><td>Industry-specific directories</td><td>(e.g., Healthgrades for doctors, Houzz for contractors)</td></tr></table></div>
+<p>Set aside one afternoon to claim all of these. Use the exact same NAP information every time.</p>
+<p><strong>4. Add Location Content to Your Website</strong></p>
+<p>If your website doesn't mention where you serve, Google won't know.</p>
+<p>Add pages or sections for each area you serve:</p>
+<p>> "Serving Dallas, Fort Worth, Plano, Frisco, McKinney, Allen, and surrounding areas."</p>
+<p>Better yet, create a dedicated page for each major city:</p>
+<ul>
+<li>/dallas-plumber</li>
+<li>/fort-worth-plumber</li>
+<li>/plano-plumber</li>
+</ul>
+<p>Each page should have:</p>
+<ul>
+<li>The city name in the title and headings</li>
+<li>A brief description of services in that area</li>
+<li>Any specific information (permits, common issues in that area)</li>
+<li>Your contact information</li>
+</ul>
+<p><strong>5. Make Sure Your Website Is Fast and Mobile-Friendly</strong></p>
+<p>60%+ of local searches happen on phones. If your website is slow or hard to use on a phone, you're losing customers.</p>
+<p>Quick check:</p>
+<ol>
+<li>Go to your website on your phone right now</li>
+<li>Can you read everything without zooming?</li>
+<li>Can you tap the phone number to call?</li>
+<li>Does it load in under 3 seconds?</li>
+<li>Can you easily find the contact information?</li>
+</ol>
+<p>If any answer is "no," that's your first website fix.</p>
+<hr>
+<h2>Lesson 3: Getting Found on Social Media</h2>
+<p>Social media for local businesses isn't about going viral. It's about being the obvious choice when someone in your area needs what you offer.</p>
+<h3>The Platform Priority</h3>
+<div class="table-wrapper"><table><tr><th>Platform</th><th>Priority</th><th>Why</th></tr><tr><td><strong>Google Business Profile</strong></td><td>#1</td><td>People actively searching for your service</td></tr><tr><td><strong>Facebook</strong></td><td>#2</td><td>Still the largest platform for 30-65 age group. Community groups are gold.</td></tr><tr><td><strong>Instagram</strong></td><td>#3</td><td>Great for visual businesses (landscaping, auto, beauty, restaurants)</td></tr><tr><td><strong>Nextdoor</strong></td><td>#4</td><td>Hyperlocal — neighbors recommending businesses to neighbors</td></tr><tr><td><strong>TikTok</strong></td><td>#5</td><td>Younger audience, great for reach, but less direct conversion for most local businesses</td></tr><tr><td><strong>LinkedIn</strong></td><td>#6</td><td>B2B only (if you serve other businesses)</td></tr></table></div>
+<p><strong>Start with #1 and #2. Add the others as you get comfortable.</strong></p>
+<h3>The 80/20 Rule of Content</h3>
+<div class="table-wrapper"><table><tr><th>Percentage</th><th>Content Type</th><th>Purpose</th></tr><tr><td>80%</td><td>Helpful, interesting, entertaining</td><td>Build trust and following</td></tr><tr><td>20%</td><td>Promotional (offers, CTAs)</td><td>Drive action</td></tr></table></div>
+<p>If every post is "Buy my stuff," people stop following. If most posts are helpful and occasionally you mention an offer, people pay attention.</p>
+<h3>Facebook Groups: Your Secret Weapon</h3>
+<p>Join every local Facebook group in your area:</p>
+<ul>
+<li>"[City] Community Group"</li>
+<li>"[City] Recommendations"</li>
+<li>"[Neighborhood] Nextdoor"</li>
+<li>"[City] Buy/Sell/Trade"</li>
+<li>Local parent groups, homeowner groups, etc.</li>
+</ul>
+<p><strong>Don't spam.</strong> Instead:</p>
+<ol>
+<li>Answer questions when people ask for recommendations</li>
+<li>Share helpful tips when relevant</li>
+<li>Be a helpful community member first</li>
+<li>When someone asks "Know a good [your service]?" — your name comes up naturally</li>
+</ol>
+<p><strong>How to get recommended:</strong> Do great work, ask for reviews, and be visible in the community. The recommendations flow naturally from there.</p>
+<h3>Hashtag Strategy (Keep It Simple)</h3>
+<p>For Instagram and TikTok:</p>
+<ul>
+<li>3-5 local hashtags: #[City]Business #[City]Life #[Neighborhood]</li>
+<li>3-5 industry hashtags: #PlumbingTips #HomeImprovement #[YourTrade]</li>
+<li>1-2 broader hashtags: #SmallBusiness #LocalBusiness</li>
+</ul>
+<p>That's it. You don't need 30 hashtags. You need the right 8-10.</p>
+<hr>
+<h2>Lesson 4: Simple Website Fixes That Make a Big Difference</h2>
+<p>You don't need a perfect website. You need one that converts visitors into callers/bookers.</p>
+<h3>The 5-Second Test</h3>
+<p>Pull up your website. Look at it for 5 seconds. Can you immediately answer:</p>
+<ol>
+<li><strong>What does this business do?</strong></li>
+<li><strong>Where are they located?</strong></li>
+<li><strong>How do I contact them?</strong></li>
+<li><strong>Why should I choose them?</strong></li>
+</ol>
+<p>If any answer is unclear, that's a problem.</p>
+<h3>Must-Haves on Your Homepage</h3>
+<div class="table-wrapper"><table><tr><th>Element</th><th>Why</th></tr><tr><td>Clear headline stating what you do</td><td>"Trusted Plumbing Services in Dallas" — not "Welcome to Our Website"</td></tr><tr><td>Phone number (clickable on mobile)</td><td>Make it stupid easy to call you</td></tr><tr><td>Service list or menu</td><td>People need to know you do what they need</td></tr><tr><td>Social proof (reviews, ratings, trust badges)</td><td>Builds instant credibility</td></tr><tr><td>Clear call to action</td><td>"Call Now" or "Book Online" — tell them what to do next</td></tr><tr><td>Your service area</td><td>"Serving Dallas, Fort Worth, and surrounding areas"</td></tr></table></div>
+<h3>Click-to-Call Setup</h3>
+<p>On your website, make sure every phone number is a clickable link:</p>
+<p><code>`</code>html</p>
+<p><a href="tel:+15551234567">(555) 123-4567</a></p>
+<p><code>`</code></p>
+<p>This seems obvious, but a shocking number of local business websites have their phone number as plain text that you can't tap to call on mobile.</p>
+<h3>Add a Booking/Contact Form</h3>
+<p>Not everyone wants to call. Give them a form:</p>
+<ul>
+<li>Name</li>
+<li>Phone</li>
+<li>Email</li>
+<li>What service do you need?</li>
+<li>When are you available?</li>
+</ul>
+<p>Connect this form to your GoHighLevel automation so submissions trigger your lead response workflow automatically.</p>
+<hr>
+<h2>Module 4 Action Items</h2>
+<ul>
+<li>[ ] <strong>Fully optimize your Google Business Profile</strong> — Follow every step in Lesson 1</li>
+<li>[ ] <strong>Post to Google Business Profile weekly</strong> — Use the content from your social media batch</li>
+<li>[ ] <strong>Claim your listings</strong> on Yelp, Facebook, Bing Places, Apple Maps, Nextdoor</li>
+<li>[ ] <strong>Ensure NAP consistency</strong> — Same name, address, phone everywhere</li>
+<li>[ ] <strong>Do the 5-second website test</strong> — Fix anything unclear</li>
+<li>[ ] <strong>Make your phone number clickable</strong> on your website</li>
+<li>[ ] <strong>Add location-specific content</strong> to your website</li>
+</ul>
+<hr>
+<h2>Quick Reference</h2>
+<p><strong>Key Takeaway:</strong> Your Google Business Profile is your #1 priority for getting found locally. Optimize it completely, post weekly, collect reviews, and keep your business information consistent everywhere online. These simple steps put you ahead of 90% of your competitors.</p>
+<p><strong>What's Next:</strong> Module 5 — Scaling With AI. Now that everything's running, we'll cover how to grow bigger — hiring, systems, advanced automations, and when to level up your tools.</p>
+<div class="cta-box"><h3>Keep Going!</h3><p>Complete all 5 modules to master AI for your business.</p><a href="/pricing.html">Unlock All Courses</a></div>
+<div class="bottom-nav"><button onclick="showModule(3)">← Module 3: Automating Your Business</button><button onclick="showModule(5)">Module 5: Scaling With AI →</button></div>
+</div>
+<div class="module" id="module-5">
+<div class="cta-box"><h3>Module 5: Scaling With AI</h3></div>
+<h1>Module 5: Scaling With AI</h1>
+<h2>Welcome</h2>
+<p>You've got your tools running, automations working, and online presence growing. Now comes the fun part — using everything you've built to actually grow your business.</p>
+<p>This module covers the shift from "doing the work" to "running the business." When to hire, how to systematize, and how to use AI as a force multiplier as you scale.</p>
+<hr>
+<h2>Lesson 1: Signs You're Ready to Scale</h2>
+<p>Before you grow, make sure the foundation is solid.</p>
+<h3>The Scale Checklist</h3>
+<p>Answer honestly:</p>
+<div class="table-wrapper"><table><tr><th>Question</th><th>Yes/No</th></tr><tr><td>My lead response automation is working (leads get contacted within 5 minutes)</td><td>___</td></tr><tr><td>I'm consistently getting reviews (at least 3-5 per month)</td><td>___</td></tr><tr><td>My social media is running on autopilot (content scheduled monthly)</td><td>___</td></tr><tr><td>I have more demand than I can handle alone</td><td>___</td></tr><tr><td>I know my numbers (what each job costs, what I profit, my close rate)</td><td>___</td></tr><tr><td>I'm turning down work or making customers wait too long</td><td>___</td></tr></table></div>
+<p><strong>4+ Yes answers:</strong> You're ready to scale.</p>
+<p><strong>2-3 Yes answers:</strong> Shore up the gaps first.</p>
+<p><strong>0-1 Yes answer:</strong> Go back to Modules 2-4 and get the basics locked in.</p>
+<h3>The Three Types of Growth</h3>
+<div class="table-wrapper"><table><tr><th>Type</th><th>What It Means</th><th>Best For</th></tr><tr><td><strong>Work more</strong></td><td>You personally take on more jobs/clients</td><td>Short-term cash flow. Not sustainable.</td></tr><tr><td><strong>Work smarter</strong></td><td>Systems and automation handle more without more effort</td><td>Where you are now. Sustainable at current size.</td></tr><tr><td><strong>Work through others</strong></td><td>Hire, delegate, build a team</td><td>True scaling. Requires systems first.</td></tr></table></div>
+<p>Most business owners try to jump from "work more" to "work through others" and skip "work smarter." That's why they hire too early, struggle to train people, and burn through cash.</p>
+<p>You've already done the "work smarter" part. Now it's time to scale.</p>
+<hr>
+<h2>Lesson 2: What to Hire For (and What to Automate)</h2>
+<h3>The Delegation Matrix</h3>
+<div class="table-wrapper"><table><tr><th>Task</th><th>Time/Week</th><th>Automate or Hire?</th><th>Cost</th></tr><tr><td>Lead follow-up</td><td>4-6 hours</td><td>✅ Automated (Module 3)</td><td>$0 extra</td></tr><tr><td>Social media posting</td><td>3-5 hours</td><td>✅ Automated (Module 3)</td><td>$0 extra</td></tr><tr><td>Appointment reminders</td><td>2-3 hours</td><td>✅ Automated (Module 3)</td><td>$0 extra</td></tr><tr><td>Review requests</td><td>1-2 hours</td><td>✅ Automated (Module 3)</td><td>$0 extra</td></tr><tr><td>Customer questions (basic)</td><td>3-4 hours</td><td>✅ Automated (chatbot)</td><td>$30-60/month</td></tr><tr><td>Customer questions (complex)</td><td>2-3 hours</td><td>👤 Hire — Virtual Assistant</td><td>$500-800/month</td></tr><tr><td>Bookkeeping/admin</td><td>3-5 hours</td><td>👤 Hire — Bookkeeper</td><td>$300-500/month</td></tr><tr><td>The actual service work</td><td>30-40 hours</td><td>👤 Hire — Technician/associate</td><td>$3,000-5,000/month</td></tr><tr><td>Sales/estimates</td><td>5-10 hours</td><td>👤 Eventually — Sales rep</td><td>Commission-based</td></tr><tr><td>Marketing strategy</td><td>3-5 hours</td><td>🤖 You + AI</td><td>$0 extra</td></tr></table></div>
+<h3>Your First Hire: Virtual Assistant (VA)</h3>
+<p>For most local businesses, the first hire should be a part-time virtual assistant, not a full-time employee.</p>
+<p><strong>What a VA handles:</strong></p>
+<ul>
+<li>Answering emails and phone calls</li>
+<li>Scheduling appointments</li>
+<li>Data entry and bookkeeping basics</li>
+<li>Social media management (posting, responding to comments)</li>
+<li>Customer follow-ups that automation can't handle</li>
+<li>Ordering supplies, coordinating with vendors</li>
+</ul>
+<p><strong>Where to find VAs:</strong></p>
+<div class="table-wrapper"><table><tr><th>Platform</th><th>Cost Range</th><th>Best For</th></tr><tr><td>OnlineJobs.ph</td><td>$4-8/hour</td><td>Reliable, long-term Filipino VAs</td></tr><tr><td>Upwork</td><td>$10-25/hour</td><td>Short-term or specialized tasks</td></tr><tr><td>Fiverr</td><td>$5-50/task</td><td>One-off projects</td></tr><tr><td>Belay</td><td>$18-25/hour</td><td>US-based, pre-vetted</td></tr></table></div>
+<p><strong>Starting point:</strong> 10-20 hours per week. You can always scale up.</p>
+<h3>Your Second Hire: Someone Who Does the Work</h3>
+<p>Once you're consistently turning down jobs because you can't get to them all, it's time to hire someone who does the actual service work.</p>
+<p>This is the big leap. It changes you from "person who does the work" to "person who runs the business."</p>
+<p><strong>Before you hire:</strong></p>
+<ol>
+<li>Document every step of your process (create SOPs — Standard Operating Procedures)</li>
+<li>Record video walkthroughs of your typical jobs using Loom</li>
+<li>Create a checklist they follow for each job</li>
+<li>Have a clear training plan (1-2 weeks of working alongside you)</li>
+</ol>
+<p><strong>How AI helps with hiring:</strong></p>
+<ul>
+<li>Write job descriptions using ChatGPT</li>
+<li>Create training materials using Loom recordings</li>
+<li>Build onboarding checklists automatically</li>
+<li>Set up automated check-ins with new employees</li>
+</ul>
+<hr>
+<h2>Lesson 3: Building Systems That Scale</h2>
+<p>The difference between a business that works and one that falls apart under growth is systems.</p>
+<p>A system is just a documented way of doing something consistently. If you can describe it, you can systematize it.</p>
+<h3>The 5 Core Systems Every Business Needs</h3>
+<p><strong>1. Lead Management System</strong></p>
+<ul>
+<li>How leads come in (website, phone, social, referrals)</li>
+<li>How they're tracked (GoHighLevel CRM)</li>
+<li>How they're followed up with (automated sequence)</li>
+<li>How they're converted (sales process)</li>
+<li>How they're handed off to operations</li>
+</ul>
+<p><strong>2. Service Delivery System</strong></p>
+<ul>
+<li>How work is scheduled</li>
+<li>What happens at each job (checklist)</li>
+<li>Quality standards (what "done right" looks like)</li>
+<li>How you communicate with the customer during the job</li>
+<li>How the job is closed out (invoicing, review request)</li>
+</ul>
+<p><strong>3. Customer Communication System</strong></p>
+<ul>
+<li>Who answers the phone (or what automation handles it)</li>
+<li>Response time standards</li>
+<li>How complaints are handled (escalation path)</li>
+<li>How feedback is collected</li>
+</ul>
+<p><strong>4. Financial System</strong></p>
+<ul>
+<li>How invoices are sent and tracked</li>
+<li>How expenses are recorded</li>
+<li>Cash flow monitoring</li>
+<li>Profit tracking by job/service</li>
+</ul>
+<p><strong>5. Marketing System</strong></p>
+<ul>
+<li>Content creation process (batching)</li>
+<li>Publishing schedule</li>
+<li>Lead generation channels</li>
+<li>Performance tracking (what's working)</li>
+</ul>
+<h3>Documenting Your Systems (The Easy Way)</h3>
+<p>You don't need to write a 50-page manual. Here's the fastest way:</p>
+<p><strong>For each process:</strong></p>
+<ol>
+<li>Open Loom</li>
+<li>Record yourself doing the task while explaining what you're doing</li>
+<li>Save the video</li>
+<li>Write a simple 5-10 step checklist to go with it</li>
+</ol>
+<p>That's your SOP. When you hire someone, you hand them the video and the checklist. They can reference it anytime.</p>
+<p><strong>Use ChatGPT to help:</strong></p>
+<p>> "I run a [type of business]. Help me create a step-by-step checklist for [specific process]. Include what to do, what tools to use, quality standards, and what to do if something goes wrong."</p>
+<p>Edit the output. Add your specifics. Now you have an SOP in 15 minutes instead of 3 hours.</p>
+<hr>
+<h2>Lesson 4: Advanced AI Strategies</h2>
+<p>Once you're growing, AI can do more than just save time — it can give you an edge over competitors.</p>
+<h3>Strategy 1: AI-Powered Customer Insights</h3>
+<p>Use your GoHighLevel data to understand your customers better:</p>
+<ul>
+<li><strong>Which services are most profitable?</strong> Track revenue per service type.</li>
+<li><strong>Which lead sources convert best?</strong> Compare website vs. social vs. referral.</li>
+<li><strong>When do customers buy?</strong> Look at seasonal patterns and days of the week.</li>
+<li><strong>What's your customer lifetime value?</strong> How much does each customer spend over time?</li>
+</ul>
+<p><strong>ChatGPT prompt for analysis:</strong></p>
+<p>> "Here's my customer data from the last 6 months: [paste exported data]. Help me identify patterns — which services are most profitable, which lead sources convert best, and where I should focus my marketing."</p>
+<h3>Strategy 2: Competitive Intelligence</h3>
+<p>Stay ahead by knowing what your competitors are doing:</p>
+<ul>
+<li><strong>Google Alerts</strong> — Set up alerts for your competitors' business names</li>
+<li><strong>Check their reviews</strong> — What are customers praising or complaining about?</li>
+<li><strong>Monitor their social media</strong> — What are they posting? What gets engagement?</li>
+<li><strong>Track their pricing</strong> — Are they running any promotions?</li>
+</ul>
+<p><strong>Use AI to analyze:</strong></p>
+<p>> "Here are the most recent 20 reviews for [Competitor Name]: [paste reviews]. Summarize the main complaints and praises. What opportunities does this create for my business?"</p>
+<p>If their customers are complaining about slow response times, you emphasize your instant automated response. If they're praising the competitor's attention to detail, you make sure your quality standards match or exceed.</p>
+<h3>Strategy 3: Pricing Optimization</h3>
+<p>Most local businesses undercharge. AI can help you find the sweet spot.</p>
+<p><strong>Analysis prompt:</strong></p>
+<p>> "I run a [type] business in [city]. My current prices are: [list prices]. My close rate is [X%]. I want to increase revenue without losing customers. Analyze my pricing and suggest adjustments. Consider local market rates, perceived value, and psychological pricing strategies."</p>
+<p><strong>Common pricing fixes:</strong></p>
+<ul>
+<li><strong>Bundle services</strong> — Package 3 services at a slight discount vs. selling individually</li>
+<li><strong>Tiered pricing</strong> — Good/Better/Best options so customers choose up</li>
+<li><strong>Anchor pricing</strong> — Show the premium option first, making the mid-tier look like a deal</li>
+<li><strong>Annual/prepaid discount</strong> — Get cash upfront, improve retention</li>
+</ul>
+<h3>Strategy 4: Referral Program Automation</h3>
+<p>Referrals are the cheapest and best leads you'll ever get. Automate the system.</p>
+<p><strong>In GoHighLevel:</strong></p>
+<ol>
+<li>Create a "Referral Program" workflow</li>
+<li>Trigger: After a customer leaves a positive review or marks job complete</li>
+<li>Send SMS: "Thanks for being an amazing customer, {first_name}! We grow through word of mouth. For every friend you refer who books with us, you'll receive [incentive — $50 credit, free service, gift card]. Here's your personal referral link: [tracking link]"</li>
+<li>Track referrals automatically</li>
+<li>Send thank-you + reward when referral converts</li>
+</ol>
+<p><strong>Good referral incentives:</strong></p>
+<div class="table-wrapper"><table><tr><th>Incentive</th><th>Works Best For</th></tr><tr><td>$25-50 account credit</td><td>Service businesses (HVAC, plumbing, cleaning)</td></tr><tr><td>Free add-on service</td><td>Businesses with multiple services</td></tr><tr><td>Gift card ($25-50)</td><td>Any business</td></tr><tr><td>Donation to charity</td><td>Community-minded businesses</td></tr><tr><td>Upgrade to next service tier</td><td>Subscription/membership businesses</td></tr></table></div>
+<hr>
+<h2>Lesson 5: The 90-Day Growth Plan</h2>
+<p>Here's your roadmap for the next 90 days.</p>
+<h3>Days 1-30: Foundation</h3>
+<ul>
+<li>[ ] Automations running (lead response, reminders, reviews, social)</li>
+<li>[ ] Google Business Profile fully optimized</li>
+<li>[ ] $27/month tool stack in place</li>
+<li>[ ] First month of social content scheduled</li>
+<li>[ ] All directory listings claimed</li>
+</ul>
+<p><strong>Goal:</strong> Systems running without your daily involvement. Time saved: 10-15 hours/week.</p>
+<h3>Days 31-60: Optimization</h3>
+<ul>
+<li>[ ] Review your numbers (close rate, revenue per lead, profit per job)</li>
+<li>[ ] Identify your most profitable service — do more of it</li>
+<li>[ ] Raise prices by 10-15% (you're worth it)</li>
+<li>[ ] Launch referral program</li>
+<li>[ ] Create SOPs for your top 3 processes</li>
+</ul>
+<p><strong>Goal:</strong> Increased revenue per customer. Time saved: 15-20 hours/week.</p>
+<h3>Days 61-90: Growth</h3>
+<ul>
+<li>[ ] Hire part-time VA (10-20 hours/week)</li>
+<li>[ ] Document remaining processes</li>
+<li>[ ] Test one new marketing channel</li>
+<li>[ ] Evaluate: Can you take on more work with a VA handling admin?</li>
+<li>[ ] Plan your next hire or growth move</li>
+</ul>
+<p><strong>Goal:</strong> Business running smoothly with support. Capacity to grow 2-3x.</p>
+<h3>The End State</h3>
+<p>After 90 days, here's what your business looks like:</p>
+<div class="table-wrapper"><table><tr><th>Area</th><th>Before</th><th>After</th></tr><tr><td>Lead response time</td><td>12-48 hours</td><td>Under 5 minutes</td></tr><tr><td>Google reviews</td><td>Inconsistent</td><td>3-5+ per month, all responded to</td></tr><tr><td>Social media</td><td>Sporadic, stressful</td><td>Consistent, automated</td></tr><tr><td>Hours worked per week</td><td>50-60</td><td>35-45</td></tr><tr><td>Revenue</td><td>Flat</td><td>Growing 20-50%</td></tr><tr><td>Personal stress</td><td>High</td><td>Manageable</td></tr><tr><td>Free time</td><td>Nonexistent</td><td>Evenings and weekends back</td></tr></table></div>
+<hr>
+<h2>Module 5 Action Items</h2>
+<ul>
+<li>[ ] <strong>Complete the Scale Checklist</strong> — Confirm you're ready</li>
+<li>[ ] <strong>Identify your first hire</strong> — VA or service provider?</li>
+<li>[ ] <strong>Document your top 3 processes</strong> — Video + checklist for each</li>
+<li>[ ] <strong>Set up a referral program</strong> — Automate it in GoHighLevel</li>
+<li>[ ] <strong>Create your 90-day plan</strong> — Customize the template above</li>
+<li>[ ] <strong>Share your growth wins in the community</strong> — Let's celebrate together</li>
+</ul>
+<hr>
+<h2>Quick Reference</h2>
+<p><strong>Key Takeaway:</strong> Scaling isn't about working harder — it's about building systems that multiply your effort. Automate first, hire second, document everything. Your first hires should be a virtual assistant for admin and eventually someone who does the service work. AI handles the repetitive stuff; people handle the judgment calls.</p>
+<p><strong>What's Next:</strong> You've completed the AI for Local Business course. Continue your journey with:</p>
+<ul>
+<li><strong>GoHighLevel Masterclass</strong> — Deep dive into advanced GHL features</li>
+<li><strong>AI Automation Workflows</strong> — More complex automations and integrations</li>
+<li><strong>Building Your AI Agency</strong> — If you want to do this for other businesses</li>
+<li><strong>Social Media with AI</strong> — Advanced content strategies</li>
+</ul>
+<hr>
+<h2>🎓 Congratulations!</h2>
+<p>You've completed the AI for Local Business course. You now know more about using AI in your business than 95% of business owners out there. The difference between knowing and doing is implementation — so keep taking action, keep asking questions in the community, and keep building.</p>
+<p>We're here for you every step of the way.</p>
+<div class="cta-box"><h3>Keep Going!</h3><p>Complete all 5 modules to master AI for your business.</p><a href="/pricing.html">Unlock All Courses</a></div>
+<div class="bottom-nav"><button onclick="showModule(4)">← Module 4: Growing Your Online Presence</button><button disabled>Next →</button></div>
+</div>
+</div>
+<script>
+const modules = document.querySelectorAll('.module');
+const navBtns = document.querySelectorAll('.nav-btn');
+const progressBar = document.getElementById('progress');
+function showModule(index) {
+  modules.forEach(m => m.classList.remove('active'));
+  navBtns.forEach(b => b.classList.remove('active'));
+  document.getElementById('module-' + index).classList.add('active');
+  navBtns[index].classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  progressBar.style.width = pct + '%';
+});
+</script>
+</body>
+</html>

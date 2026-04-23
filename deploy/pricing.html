@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing — Your AI Plug</title>
+    <meta name="description" content="Choose your plan. Free community access or unlock the full AI toolkit with courses, GoHighLevel sub-accounts, and done-for-you automations.">
+    <link rel="canonical" href="https://youraiplug.com/pricing">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css">
+    <style>
+        :root {
+            --primary: #00f0ff;
+            --primary-dim: rgba(0,240,255,0.15);
+            --bg: #0a0a0f;
+            --surface: #12121a;
+            --surface2: #1a1a26;
+            --border: #2a2a3a;
+            --text: #e0e0e8;
+            --text-dim: #8888aa;
+            --green: #00ff88;
+            --orange: #ff6b35;
+            --purple: #a855f7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+        /* ─── NAV ─── */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(10,10,15,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); z-index: 100; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+        .nav-cta { background: var(--primary); color: #000; padding: 0.5rem 1.25rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+
+        /* ─── HERO ─── */
+        .hero { padding: 8rem 2rem 4rem; text-align: center; max-width: 800px; margin: 0 auto; }
+        .hero-badge { display: inline-block; background: var(--primary-dim); color: var(--primary); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .hero h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 800; line-height: 1.15; margin-bottom: 1rem; }
+        .hero h1 span { color: var(--primary); }
+        .hero p { color: var(--text-dim); font-size: 1.15rem; max-width: 600px; margin: 0 auto 1rem; }
+
+        /* ─── TOGGLE ─── */
+        .toggle-wrap { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 2rem 0 3rem; }
+        .toggle-label { font-size: 0.95rem; color: var(--text-dim); cursor: pointer; }
+        .toggle-label.active { color: var(--text); font-weight: 600; }
+        .toggle-switch { width: 52px; height: 28px; background: var(--surface2); border-radius: 14px; border: 2px solid var(--border); position: relative; cursor: pointer; transition: all 0.3s; }
+        .toggle-switch::after { content: ''; position: absolute; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; top: 2px; left: 2px; transition: transform 0.3s; }
+        .toggle-switch.annual { background: var(--primary-dim); border-color: var(--primary); }
+        .toggle-switch.annual::after { transform: translateX(24px); }
+        .save-badge { background: var(--green); color: #000; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 10px; }
+
+        /* ─── PRICING GRID ─── */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; padding: 0 2rem 4rem; }
+        .plan-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem 2rem; position: relative; transition: border-color 0.3s, transform 0.3s; }
+        .plan-card:hover { transform: translateY(-4px); border-color: var(--primary); }
+        .plan-card.featured { border-color: var(--primary); box-shadow: 0 0 40px rgba(0,240,255,0.1); }
+        .plan-card.featured::before { content: 'MOST POPULAR'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary); color: #000; font-size: 0.7rem; font-weight: 800; padding: 0.3rem 1rem; border-radius: 10px; letter-spacing: 0.05em; }
+        .plan-icon { font-size: 2rem; margin-bottom: 1rem; }
+        .plan-name { font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .plan-desc { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 1.5rem; min-height: 40px; }
+        .plan-price { margin-bottom: 0.5rem; }
+        .plan-price .amount { font-size: 2.75rem; font-weight: 800; }
+        .plan-price .currency { font-size: 1.25rem; vertical-align: super; }
+        .plan-price .period { color: var(--text-dim); font-size: 0.9rem; }
+        .plan-price .annual-note { color: var(--green); font-size: 0.8rem; display: none; }
+        .plan-cta { display: block; width: 100%; padding: 0.9rem; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; margin: 1.5rem 0; text-align: center; text-decoration: none; transition: all 0.2s; }
+        .plan-cta.primary { background: var(--primary); color: #000; }
+        .plan-cta.primary:hover { background: #00d4e0; box-shadow: 0 0 20px rgba(0,240,255,0.3); }
+        .plan-cta.secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+        .plan-cta.secondary:hover { border-color: var(--primary); color: var(--primary); }
+        .plan-features { list-style: none; }
+        .plan-features li { padding: 0.5rem 0; font-size: 0.9rem; color: var(--text-dim); display: flex; align-items: flex-start; gap: 0.75rem; }
+        .plan-features li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+        .plan-features li.disabled { opacity: 0.35; }
+        .plan-features li.disabled::before { content: '—'; color: var(--text-dim); }
+
+        /* ─── VALUE SECTION ─── */
+        .value-section { max-width: 900px; margin: 0 auto; padding: 4rem 2rem; }
+        .value-section h2 { text-align: center; font-size: 2rem; margin-bottom: 0.75rem; }
+        .value-section > p { text-align: center; color: var(--text-dim); margin-bottom: 3rem; }
+        .value-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .value-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+        .value-card h3 { font-size: 1rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .value-card p { color: var(--text-dim); font-size: 0.85rem; }
+
+        /* ─── FAQ ─── */
+        .faq { max-width: 750px; margin: 0 auto; padding: 4rem 2rem; }
+        .faq h2 { text-align: center; font-size: 2rem; margin-bottom: 2.5rem; }
+        .faq-item { border-bottom: 1px solid var(--border); }
+        .faq-q { padding: 1.25rem 0; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-q::after { content: '+'; font-size: 1.5rem; color: var(--primary); transition: transform 0.3s; }
+        .faq-item.open .faq-q::after { transform: rotate(45deg); }
+        .faq-a { color: var(--text-dim); font-size: 0.9rem; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s; }
+        .faq-item.open .faq-a { max-height: 300px; padding-bottom: 1.25rem; }
+
+        /* ─── FOOTER ─── */
+        footer { text-align: center; padding: 3rem 2rem; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .pricing-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="nav-logo">⚡ Your AI Plug</a>
+    <ul class="nav-links">
+        <li><a href="/">Free Kit</a></li>
+        <li><a href="/affiliate.html">GHL Deal</a></li>
+        <li><a href="/pricing.html" class="active">Pricing</a></li>
+    </ul>
+    <a href="#plans" class="nav-cta">Get Started</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-badge">🎓 29 courses & growing</div>
+    <h1>Stop paying <span>$500+/mo</span> for AI tools you don't understand</h1>
+    <p>Get the courses, community, and tools that actually work — for less than a Netflix subscription. Cancel the subscriptions. Keep the skills.</p>
+</section>
+
+<div class="toggle-wrap">
+    <span class="toggle-label active" id="monthly-label">Monthly</span>
+    <div class="toggle-switch" id="billing-toggle" onclick="toggleBilling()"></div>
+    <span class="toggle-label" id="annual-label">Annual</span>
+    <span class="save-badge">Save up to 35%</span>
+</div>
+
+<div class="pricing-grid" id="plans">
+
+    <!-- FREE -->
+    <div class="plan-card">
+        <div class="plan-icon">🆓</div>
+        <div class="plan-name">Free</div>
+        <div class="plan-desc">Get your feet wet with AI basics</div>
+        <div class="plan-price">
+            <span class="currency">$</span><span class="amount">0</span><span class="period">/forever</span>
+        </div>
+        <a href="#" class="plan-cta secondary">Join Free Community</a>
+        <ul class="plan-features">
+            <li>Private Discord/Telegram community</li>
+            <li>Weekly live AI tips & Q&A</li>
+            <li>AI Business Starter Kit (PDF)</li>
+            <li>Monthly AI news roundup</li>
+            <li class="disabled">Full course library</li>
+            <li class="disabled">GoHighLevel sub-account</li>
+            <li class="disabled">1-on-1 office hours</li>
+        </ul>
+    </div>
+
+    <!-- STARTER -->
+    <div class="plan-card">
+        <div class="plan-icon">🚀</div>
+        <div class="plan-name">Starter</div>
+        <div class="plan-desc">Learn AI + get your own CRM for less than lunch</div>
+        <div class="plan-price">
+            <span class="currency">$</span><span class="amount monthly-price">27</span><span class="amount annual-price" style="display:none">17</span><span class="period">/month</span>
+            <div class="annual-note annual-note-text" style="display:none">$197/year — save $127</div>
+        </div>
+        <a href="#" class="plan-cta primary">Start Free 7-Day Trial</a>
+        <ul class="plan-features">
+            <li>Everything in Free</li>
+            <li>Full course library (5 courses, 29 modules)</li>
+            <li>GoHighLevel Starter sub-account</li>
+            <li>50+ AI prompt templates</li>
+            <li>CRM + funnel + email automation ready</li>
+            <li>Private course community channels</li>
+            <li>Downloadable cheat sheets & SOPs</li>
+        </ul>
+    </div>
+
+    <!-- PRO -->
+    <div class="plan-card featured">
+        <div class="plan-icon">⚡</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-desc">Done-for-you templates + direct access to the team</div>
+        <div class="plan-price">
+            <span class="currency">$</span><span class="amount monthly-price">97</span><span class="amount annual-price" style="display:none">65</span><span class="period">/month</span>
+            <div class="annual-note annual-note-text" style="display:none">$797/year — save $367</div>
+        </div>
+        <a href="#" class="plan-cta primary">Start Free 7-Day Trial</a>
+        <ul class="plan-features">
+            <li>Everything in Starter</li>
+            <li>GoHighLevel Pro sub-account (full features)</li>
+            <li>Bi-weekly group office hours (live)</li>
+            <li>Done-for-you funnel templates</li>
+            <li>AI agent builds (1 per month)</li>
+            <li>Priority community support</li>
+            <li>Early access to new courses & tools</li>
+            <li>Affiliate commission: earn 20% referrals</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- WHAT'S INCLUDED -->
+<section class="value-section">
+    <h2>What's Inside Your AI Plug</h2>
+    <p>$3,400+ worth of value. You pay a fraction.</p>
+    <div class="value-grid">
+        <div class="value-card">
+            <h3>📚 5 Full Courses</h3>
+            <p>AI for Local Business, GHL Masterclass, AI Automation, Build Your Agency, Social Media with AI — 29 modules total.</p>
+        </div>
+        <div class="value-card">
+            <h3>💻 GoHighLevel Included</h3>
+            <p>Your own sub-account with CRM, funnels, email, SMS, and automations. No separate GHL subscription needed.</p>
+        </div>
+        <div class="value-card">
+            <h3>🤖 AI Agent Templates</h3>
+            <p>Pre-built chatbots, review responders, missed-call text-backs, and social media automators you can deploy today.</p>
+        </div>
+        <div class="value-card">
+            <h3>👥 Active Community</h3>
+            <p>Business owners and marketers sharing what works, getting unstuck together, and growing their revenue with AI.</p>
+        </div>
+        <div class="value-card">
+            <h3>📋 50+ Prompt Library</h3>
+            <p>Copy-paste prompts for content, emails, social, proposals, and customer service. Tested and refined.</p>
+        </div>
+        <div class="value-card">
+            <h3>🎯 Weekly Live Training</h3>
+            <p>Every week: new tactics, tool walkthroughs, Q&A sessions. Can't make it live? All recordings saved.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <div class="faq-q">What if I already have GoHighLevel?</div>
+        <div class="faq-a">No problem. Use our GHL affiliate link to get started or upgrade — you still get the full course library, community, and templates. The GHL sub-account is optional, not required.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">Can I cancel anytime?</div>
+        <div class="faq-a">Yes. No contracts. Cancel from your dashboard in one click. If you cancel, you keep access until the end of your billing period. Annual plans are non-refundable after 30 days.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">What happens to my GHL sub-account if I cancel?</div>
+        <div class="faq-a">Your data stays for 30 days. After that, the sub-account is deactivated. You can export your contacts, funnels, and automations anytime before that.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">Is this for beginners?</div>
+        <div class="faq-a">Yes. "AI for Local Business" starts from zero. No coding, no tech background needed. If you can use email, you can use everything we teach.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">What's the difference between Starter and Pro?</div>
+        <div class="faq-a">Starter gives you courses and a basic GHL account. Pro adds office hours, done-for-you templates, AI agent builds, and a full-featured GHL account. If you're running a business, Pro pays for itself.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">Do I need to be in Lubbock or Texas?</div>
+        <div class="faq-a">Nope. 100% online. We have members from all over. The community is global.</div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Your AI Plug · <a href="mailto:support@youraiplug.com" style="color:var(--primary);">support@youraiplug.com</a> · Lubbock, TX</p>
+</footer>
+
+<script>
+    let isAnnual = false;
+    function toggleBilling() {
+        isAnnual = !isAnnual;
+        document.getElementById('billing-toggle').classList.toggle('annual', isAnnual);
+        document.getElementById('monthly-label').classList.toggle('active', !isAnnual);
+        document.getElementById('annual-label').classList.toggle('active', isAnnual);
+        document.querySelectorAll('.monthly-price').forEach(el => el.style.display = isAnnual ? 'none' : 'inline');
+        document.querySelectorAll('.annual-price').forEach(el => el.style.display = isAnnual ? 'inline' : 'none');
+        document.querySelectorAll('.annual-note-text').forEach(el => el.style.display = isAnnual ? 'block' : 'none');
+    }
+    document.querySelectorAll('.faq-q').forEach(q => {
+        q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+    });
+</script>
+
+</body>
+</html>
