@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free AI Business Starter Kit — Your AI Plug</title>
+    <meta name="description" content="Get the 2026 AI Business Starter Kit free. 10 AI tools, 5 automations, and a $27/mo starter stack that replaces $500+ in tools.">
+    <meta property="og:title" content="Free AI Business Starter Kit — Your AI Plug">
+    <meta property="og:description" content="10 AI tools, 5 automations, and a $27/mo stack that replaces $500+ in tools. Download free.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://youraiplug.com/starter-kit">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>⚡</text></svg>">
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PLACEHOLDER');
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #6C5CE7;
+            --primary-dark: #5A4BD1;
+            --accent: #00D2D3;
+            --bg: #0A0A1A;
+            --bg-card: #12122A;
+            --text: #E8E8F0;
+            --text-muted: #9999BB;
+            --border: #2A2A4A;
+            --success: #00E676;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(108, 92, 231, 0.2);
+            color: var(--accent);
+            padding: 0.3rem 1rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(0, 210, 211, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+        .benefits {
+            list-style: none;
+            margin-bottom: 2.5rem;
+        }
+        .benefits li {
+            padding: 0.6rem 0;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        .benefits li::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .form-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .form-card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        .hp-field {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(108, 92, 231, 0.4);
+        }
+        .btn:disabled {
+            opacity: 0.7;
+            cursor: wait;
+            transform: none;
+        }
+        .privacy {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .trust {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .trust span { display: flex; align-items: center; gap: 0.4rem; }
+        /* Success state */
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        .success-message h2 {
+            color: var(--success);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .success-message p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        .success-message .checkmark {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+        @media (max-width: 640px) {
+            h1 { font-size: 1.8rem; }
+            .container { padding: 1.5rem 1rem; }
+            .form-card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="badge">⚡ FREE DOWNLOAD</div>
+
+        <h1>AI Business Starter Kit</h1>
+        <p class="subtitle">10 AI tools, 5 automations, and a $27/mo starter stack that replaces $500+ in tools. For small business owners who want results, not hype.</p>
+
+        <ul class="benefits">
+            <li>10 AI tools ranked by business type (not sponsored, just what works)</li>
+            <li>5 automations that save 10+ hours per week</li>
+            <li>$27/mo starter stack — enterprise tools at a fraction of the cost</li>
+            <li>Quick-start guide to get results this week, not next quarter</li>
+            <li>Access to free community of 500+ business owners using AI</li>
+        </ul>
+
+        <div class="form-card">
+            <h2>Get the free kit + join the community</h2>
+
+            <form id="leadForm" action="PASTE_GHL_WEBHOOK_URL_HERE" method="POST">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="Brandon">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="brandon@example.com">
+                </div>
+                <!-- Honeypot -->
+                <div class="hp-field">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                <button type="submit" class="btn" id="submitBtn">Send Me the Free Kit →</button>
+            </form>
+
+            <p class="privacy">We respect your inbox. No spam, ever.</p>
+
+            <div class="trust">
+                <span>🔒 Secure</span>
+                <span>📧 No spam</span>
+                <span>⚡ Instant access</span>
+            </div>
+        </div>
+
+        <div class="success-message" id="successMessage">
+            <div class="checkmark">✅</div>
+            <h2>You're in!</h2>
+            <p>Check your email for the AI Business Starter Kit and your invite to the free community.</p>
+            <p>See you inside 👋</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Your AI Plug — Making AI accessible for every business.<br>
+        Lubbock, TX | support@youraiplug.com
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+
+            const data = {
+                firstName: document.getElementById('firstName').value,
+                email: document.getElementById('email').value
+            };
+
+            try {
+                await fetch(this.action, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                gtag('event', 'generate_lead', { method: 'starter_kit' });
+            } catch(err) {
+                console.log('Webhook error:', err);
+            }
+
+            document.getElementById('leadForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
