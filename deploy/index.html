@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Business Starter Kit — Free | Your AI Plug</title>
+    <meta name="description" content="Get the free AI Business Starter Kit — 10 essential AI tools, 5 automations that save 10+ hours/week, and a complete tech stack for just $27/month.">
+    <meta property="og:title" content="AI Business Starter Kit — Free | Your AI Plug">
+    <meta property="og:description" content="10 AI tools, 5 automations, and a $27/mo stack that saves 10+ hours/week. Built for local business owners.">
+    <meta property="og:url" content="https://youraiplug.com/">
+    <meta property="og:image" content="https://youraiplug.com/assets/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Your AI Plug">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Business Starter Kit — Free | Your AI Plug">
+    <meta name="twitter:description" content="10 AI tools, 5 automations, and a $27/mo stack that saves 10+ hours/week.">
+    <meta name="twitter:image" content="https://youraiplug.com/assets/og-image.png">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --accent: #00D4AA;
+            --bg: #0A0A0F;
+            --bg-card: #12121A;
+            --text: #FFFFFF;
+            --text-muted: #9CA3AF;
+            --border: #2A2A3A;
+            --gradient: linear-gradient(135deg, #6C63FF, #00D4AA);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        a { color: var(--accent); text-decoration: none; }
+        nav { position: fixed; top: 0; width: 100%; background: rgba(10,10,15,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 1000; padding: 0 2rem; }
+        .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; height: 64px; }
+        .logo { font-size: 1.25rem; font-weight: 800; }
+        .logo span { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text-muted); font-size: 0.9rem; }
+        .hero { padding: 8rem 2rem 4rem; text-align: center; max-width: 800px; margin: 0 auto; }
+        .badge { display: inline-block; background: rgba(108,99,255,0.15); color: var(--primary); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; border: 1px solid rgba(108,99,255,0.3); }
+        h1 { font-size: clamp(2rem,5vw,3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; }
+        h1 .gradient { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.15rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem; }
+        .form-container { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; max-width: 460px; margin: 0 auto; }
+        .form-container h3 { margin-bottom: 0.5rem; }
+        .form-container > p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.3rem; }
+        .form-group input { width: 100%; padding: 0.75rem 1rem; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 1rem; outline: none; }
+        .form-group input:focus { border-color: var(--primary); }
+        .honeypot { position: absolute; left: -9999px; }
+        .submit-btn { width: 100%; padding: 0.85rem; background: var(--gradient); border: none; border-radius: 8px; color: #fff; font-size: 1rem; font-weight: 700; cursor: pointer; margin-top: 0.5rem; }
+        .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .trust { font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem; }
+        .features { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; }
+        .features h2 { text-align: center; font-size: 2rem; margin-bottom: 0.5rem; }
+        .features > p { text-align: center; color: var(--text-muted); margin-bottom: 3rem; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 1.5rem; }
+        .feature-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+        .feature-icon { font-size: 2rem; margin-bottom: 1rem; }
+        .feature-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .feature-card p { color: var(--text-muted); font-size: 0.9rem; }
+        .inside { padding: 4rem 2rem; max-width: 800px; margin: 0 auto; }
+        .inside h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+        .inside ul { list-style: none; }
+        .inside li { padding: 1rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 1rem; }
+        .check { color: var(--accent); font-size: 1.2rem; flex-shrink: 0; }
+        .cta-section { padding: 4rem 2rem; text-align: center; }
+        .cta-section h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .cta-section p { color: var(--text-muted); margin-bottom: 2rem; }
+        footer { padding: 2rem; text-align: center; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.85rem; }
+        .success-message { display: none; text-align: center; padding: 2rem 1rem; }
+        .success-message.show { display: block; }
+        .success-message .checkmark { font-size: 3rem; margin-bottom: 1rem; }
+        @media (max-width: 768px) { .nav-links { display: none; } }
+    </style>
+</head>
+<body>
+    <nav><div class="nav-inner"><div class="logo"><span>⚡ Your AI Plug</span></div><ul class="nav-links"><li><a href="#features">Features</a></li><li><a href="#inside">What's Inside</a></li><li><a href="#signup">Get the Kit</a></li><li><a href="affiliate.html">GoHighLevel</a></li></ul></div></nav>
+    <section class="hero" id="signup">
+        <div class="badge">🚀 FREE Download</div>
+        <h1>The <span class="gradient">AI Business Starter Kit</span> for Local Business Owners</h1>
+        <p>10 essential AI tools, 5 automations that save 10+ hours per week, and a complete tech stack for just $27/month. Built for owners who want to move fast without wasting money.</p>
+        <div class="form-container" id="formContainer">
+            <h3>Get Instant Access</h3>
+            <p>Enter your details and we'll send the kit straight to your inbox.</p>
+            <form id="leadForm">
+                <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off">
+                <div class="form-group"><label for="firstName">First Name</label><input type="text" id="firstName" name="firstName" required placeholder="Your first name"></div>
+                <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="your@email.com"></div>
+                <button type="submit" class="submit-btn" id="submitBtn">Send Me the Starter Kit →</button>
+                <p class="trust">🔒 No spam. Unsubscribe anytime.</p>
+            </form>
+            <div class="success-message" id="successMessage"><div class="checkmark">✅</div><h3>Check Your Inbox!</h3><p>The AI Business Starter Kit is on its way. Also check your spam folder.</p></div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <h2>Why This Kit Exists</h2>
+        <p>Most local businesses are drowning in AI hype. We cut through the noise.</p>
+        <div class="feature-grid">
+            <div class="feature-card"><div class="feature-icon">🎯</div><h3>No Tech Background Needed</h3><p>Every tool is explained in plain English. If you can use email, you can use these AI tools.</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>$27/Month Total Stack</h3><p>We compared 50+ tools and picked the ones that deliver the most value for the least cost.</p></div>
+            <div class="feature-card"><div class="feature-icon">⏱️</div><h3>Save 10+ Hours/Week</h3><p>5 specific automations that handle the repetitive tasks eating your time.</p></div>
+            <div class="feature-card"><div class="feature-icon">📍</div><h3>Built for Local Business</h3><p>Specific use cases for dentists, contractors, realtors, restaurants, and service businesses.</p></div>
+            <div class="feature-card"><div class="feature-icon">🔧</div><h3>Step-by-Step Setup</h3><p>Copy-paste instructions to get each tool running in under 30 minutes.</p></div>
+            <div class="feature-card"><div class="feature-icon">📈</div><h3>Scale When Ready</h3><p>Start free, upgrade when it makes sense. We show you exactly when and why.</p></div>
+        </div>
+    </section>
+    <section class="inside" id="inside">
+        <h2>What's Inside the Kit</h2>
+        <ul>
+            <li><span class="check">✦</span> <strong>The 10 Essential AI Tools</strong> — ChatGPT, Claude, Midjourney, ElevenLabs, Make, GoHighLevel, and more</li>
+            <li><span class="check">✦</span> <strong>5 Automations That Save 10+ Hours/Week</strong> — Lead follow-up, reviews, social, appointments, invoices</li>
+            <li><span class="check">✦</span> <strong>The $27/Month Tech Stack Comparison</strong> — Side-by-side breakdown of free vs. paid options</li>
+            <li><span class="check">✦</span> <strong>AI Prompt Library</strong> — 20 battle-tested prompts for marketing, customer responses, and planning</li>
+            <li><span class="check">✦</span> <strong>30-Day Quick-Start Roadmap</strong> — Week-by-week plan to go from zero to automated</li>
+            <li><span class="check">✦</span> <strong>Bonus: AI Readiness Checklist</strong> — Know what to automate first based on your business type</li>
+        </ul>
+    </section>
+    <section class="cta-section"><h2>Ready to Work Smarter?</h2><p>Join hundreds of local business owners using AI to save time and grow revenue.</p><a href="#signup" class="submit-btn" style="display:inline-block;width:auto;padding:0.85rem 2rem;">Get the Free Kit →</a></section>
+    <footer><p>© 2026 Your AI Plug. Lubbock, TX | <a href="mailto:support@youraiplug.com">support@youraiplug.com</a></p></footer>
+    <script>
+        var GHL_WEBHOOK_URL = 'PASTE_GHL_WEBHOOK_URL_HERE';
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (document.querySelector('input[name="website"]').value) return;
+            var btn = document.getElementById('submitBtn');
+            btn.disabled = true; btn.textContent = 'Sending...';
+            var formData = { firstName: document.getElementById('firstName').value, email: document.getElementById('email').value, source: 'ai-starter-kit-landing' };
+            fetch(GHL_WEBHOOK_URL, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(formData) })
+            .then(function() {
+                document.querySelector('#leadForm').style.display = 'none';
+                document.getElementById('successMessage').classList.add('show');
+                if (typeof gtag === 'function') gtag('event', 'generate_lead', {'event_category':'lead_magnet','event_label':'ai_starter_kit'});
+            })
+            .catch(function() { btn.disabled = false; btn.textContent = 'Send Me the Starter Kit →'; alert('Something went wrong. Please try again.'); });
+        });
+    </script>
+</body>
+</html>

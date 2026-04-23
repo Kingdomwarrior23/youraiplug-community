@@ -4,43 +4,47 @@ All courses hosted on School (community platform).
 
 ---
 
-## Course 1: AI for Local Business (Starter Tier)
+## Course 1: AI for Local Business (Starter Tier) ✅ FULLY WRITTEN
 
 **Audience:** Business owners new to AI — dentists, contractors, realtors, restaurants, agencies
 **Length:** 5 modules, ~3 hours total
 **Outcome:** Set up 3 AI tools and 2 automations
+**Files:** `courses/ai-for-local-business/module-*.md`
 
-### Module 1: Why AI Matters for Local Business (30 min)
-- The AI landscape in 2026 — what's real, what's hype
-- Case studies: local businesses saving 10+ hours/week
-- Common myths debunked
-- Your first 3 AI tools (ChatGPT, Canva AI, NotebookLM)
+### Module 1: What Is AI (And Why Should You Care?)
+- AI in plain English — no jargon
+- How local businesses are already using AI (3 real examples)
+- Finding your biggest time drains (time audit exercise)
+- Your AI readiness score
+- **File:** `module-1-what-is-ai.md`
 
-### Module 2: AI-Powered Marketing (30 min)
-- Writing emails, ads, and social posts with AI
-- Creating graphics and videos with Canva AI + Descript
-- Setting up your social media content machine
-- Homework: Create 7 days of social content with AI
+### Module 2: The Essential AI Toolkit
+- The only 5 tools you need (ChatGPT, Canva, GoHighLevel, ManyChat, Loom)
+- The $27/month stack — what it replaces ($1,380-4,750/mo value)
+- Step-by-step GoHighLevel setup walkthrough
+- **File:** `module-2-essential-toolkit.md`
 
-### Module 3: Automating Your Workflow (30 min)
-- What is automation and why it matters
-- Setting up your first automation in GoHighLevel
-- Lead auto-response sequence
-- Review request automation
-- Homework: Set up 1 automation this week
+### Module 3: Automating Your Business
+- Lead Response Machine — instant response + follow-up sequence
+- Appointment Reminder System — reduce no-shows by 80%
+- Review Collection Machine — automate Google reviews
+- Social Media on Autopilot — monthly batch content system
+- **File:** `module-3-automating-business.md`
 
-### Module 4: CRM and Customer Management (30 min)
-- Why every business needs a CRM (even solo operators)
-- Setting up contacts, pipelines, and follow-ups
-- Using AI to qualify leads automatically
-- Homework: Import your contacts and set up a pipeline
+### Module 4: Growing Your Online Presence
+- Google Business Profile — full optimization walkthrough
+- SEO basics for local — the 5 things that actually matter
+- Social media platform priority by business type
+- Website must-haves and the 5-second test
+- **File:** `module-4-growing-online-presence.md`
 
-### Module 5: Building Your AI Stack (30 min)
-- The $27/mo starter stack
-- The $97/mo growth stack
-- Tools by business type (service, retail, professional)
-- Scaling what's working
-- Homework: Build your 90-day AI implementation plan
+### Module 5: Scaling With AI
+- The Scale Checklist — are you ready?
+- What to hire for vs what to automate
+- Building 5 core business systems
+- Advanced strategies: competitive intel, pricing, referral automation
+- The 90-Day Growth Plan
+- **File:** `module-5-scaling-with-ai.md`
 
 ---
 
